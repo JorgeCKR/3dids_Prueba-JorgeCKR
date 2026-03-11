@@ -137,7 +137,7 @@
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
-                "text": "<h3>Te recomendamos</h3>",
+                "text": "<h3><strong>Te recomendamos</strong></h3>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
@@ -148,7 +148,7 @@
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
-                "color": "var(--color-foreground-heading)",
+                "color": "var(--color-primary)",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
