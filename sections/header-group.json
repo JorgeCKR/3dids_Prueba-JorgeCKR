@@ -20,7 +20,7 @@
             "text": "Hacemos envíos rápidos y seguros a todo el mundo. Consulta condiciones <a href=\"https://artesanialatina.net/es/p/9-envios-y-devoluciones\"><span style=\"text-decoration:underline\">aquí</span></a>",
             "link": "",
             "font": "var(--font-subheading--family)",
-            "font_size": "0.875rem",
+            "font_size": "0.75rem",
             "weight": "500",
             "letter_spacing": "normal",
             "case": "none"
