@@ -1,5 +1,7 @@
 
-{% render 'button', link: block.settings.link %}
+<div id="btn-{{ block.id }}">
+  {% render 'button', link: block.settings.link %}
+</div>
 
 {% schema %}
 {

@@ -4944,3 +4944,12 @@ product-recommendations:has([data-has-recommendations='false']) {
     translate: 0px var(--atc-destination, 0px);
   }
 }
+
+/*Transicion del boton Descubre mas*/
+[id^="btn-"] a{
+  transition: transform 0.25s ease;
+}
+
+[id^="btn-"] a:hover{
+  transform: scale(1.06);
+}
