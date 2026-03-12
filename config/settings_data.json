@@ -677,5 +677,11 @@
         }
       }
     }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      "/* Efecto de escala aumentado en hover para el botón específico */#template--29251764519250__hero_jVaWmY__button_H9gpTf {transition: transform 0.3s ease-in-out;}",
+      "#template--29251764519250__hero_jVaWmY__button_H9gpTf:hover {transform: scale(1.15); /* Aumenta a 115% del tamaño original */}"
+    ]
   }
 }
