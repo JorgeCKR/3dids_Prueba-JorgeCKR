@@ -829,12 +829,12 @@
             "button_WpEDFF": {
               "type": "button",
               "settings": {
-                "label": "Shop now",
+                "label": "Descubre Artesanía Latina",
                 "link": "shopify://collections/all",
                 "open_in_new_tab": false,
-                "style_class": "link",
-                "width": "fit-content",
-                "custom_width": 100,
+                "style_class": "button-secondary",
+                "width": "custom",
+                "custom_width": 66,
                 "width_mobile": "fit-content",
                 "custom_width_mobile": 100
               },
@@ -847,7 +847,7 @@
             "button_WpEDFF"
           ]
         },
-        "group_qEJgmp": {
+        "group_9Wmpyr": {
           "type": "group",
           "settings": {
             "content_direction": "column",
@@ -855,18 +855,18 @@
             "horizontal_alignment": "flex-start",
             "vertical_alignment": "center",
             "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "center",
+            "horizontal_alignment_flex_direction_column": "flex-start",
             "vertical_alignment_flex_direction_column": "space-between",
-            "gap": 32,
-            "width": "fill",
-            "custom_width": 100,
+            "gap": 56,
+            "width": "custom",
+            "custom_width": 50,
             "width_mobile": "fill",
             "custom_width_mobile": 100,
-            "height": "fill",
-            "custom_height": 100,
+            "height": "custom",
+            "custom_height": 64,
             "inherit_color_scheme": false,
-            "color_scheme": "scheme-5",
-            "background_media": "image",
+            "color_scheme": "scheme-2",
+            "background_media": "none",
             "video_position": "cover",
             "background_image_position": "cover",
             "border": "none",
@@ -879,14 +879,14 @@
             "gradient_direction": "to top",
             "link": "",
             "open_in_new_tab": false,
-            "placeholder": "hero-apparel-1",
-            "padding-block-start": 40,
-            "padding-block-end": 40,
-            "padding-inline-start": 40,
-            "padding-inline-end": 40
+            "placeholder": "hero-apparel-2",
+            "padding-block-start": 0,
+            "padding-block-end": 88,
+            "padding-inline-start": 41,
+            "padding-inline-end": 100
           },
           "blocks": {
-            "spacer_36BPck": {
+            "spacer_McAFJ7": {
               "type": "spacer",
               "settings": {
                 "size": "pixel",
@@ -899,23 +899,132 @@
               },
               "blocks": {}
             },
-            "text_JCyiUq": {
+            "button_MEffY8": {
+              "type": "button",
+              "settings": {
+                "label": "Descubre Artesanía Latina",
+                "link": "shopify://collections/all",
+                "open_in_new_tab": false,
+                "style_class": "button-secondary",
+                "width": "custom",
+                "custom_width": 66,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "spacer_McAFJ7",
+            "button_MEffY8"
+          ]
+        }
+      },
+      "block_order": [
+        "group_6tFMMq",
+        "group_9Wmpyr"
+      ],
+      "name": "t:names.split_showcase",
+      "settings": {
+        "content_direction": "row",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 0,
+        "section_width": "full-width",
+        "section_height": "custom",
+        "section_height_custom": 80,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "section_hyFrjy": {
+      "type": "section",
+      "blocks": {
+        "group_c7wHWm": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "space-between",
+            "gap": 56,
+            "width": "custom",
+            "custom_width": 50,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "custom",
+            "custom_height": 64,
+            "inherit_color_scheme": false,
+            "color_scheme": "scheme-2",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "hero-apparel-2",
+            "padding-block-start": 0,
+            "padding-block-end": 88,
+            "padding-inline-start": 41,
+            "padding-inline-end": 100
+          },
+          "blocks": {
+            "spacer_Ggp8ep": {
+              "type": "spacer",
+              "settings": {
+                "size": "pixel",
+                "percent_size": 100,
+                "pixel_size": 16,
+                "custom_mobile_size": false,
+                "size_mobile": "percent",
+                "percent_size_mobile": 100,
+                "pixel_size_mobile": 120
+              },
+              "blocks": {}
+            },
+            "text_FRE4kJ": {
               "type": "text",
               "settings": {
-                "text": "<h3>Bestsellers</h3>",
-                "width": "fit-content",
+                "text": "<h1><strong>Despierta al constructor<br/>que llevas dentro</strong></h1>",
+                "width": "100%",
                 "max_width": "normal",
-                "alignment": "center",
-                "type_preset": "h3",
+                "alignment": "left",
+                "type_preset": "h1",
                 "font": "var(--font-body--family)",
                 "font_size": "1rem",
                 "line_height": "normal",
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
+                "color": "var(--color-foreground-heading)",
+                "background": true,
+                "background_color": "#273488",
                 "corner_radius": 0,
                 "padding-block-start": 0,
                 "padding-block-end": 0,
@@ -924,15 +1033,15 @@
               },
               "blocks": {}
             },
-            "button_Ga8Gnn": {
+            "button_CKgd84": {
               "type": "button",
               "settings": {
-                "label": "Shop now",
+                "label": "Descubre Artesanía Latina",
                 "link": "shopify://collections/all",
                 "open_in_new_tab": false,
-                "style_class": "link",
-                "width": "fit-content",
-                "custom_width": 100,
+                "style_class": "button-secondary",
+                "width": "custom",
+                "custom_width": 66,
                 "width_mobile": "fit-content",
                 "custom_width_mobile": 100
               },
@@ -940,15 +1049,113 @@
             }
           },
           "block_order": [
-            "spacer_36BPck",
-            "text_JCyiUq",
-            "button_Ga8Gnn"
+            "spacer_Ggp8ep",
+            "text_FRE4kJ",
+            "button_CKgd84"
+          ]
+        },
+        "group_tk6rnE": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "space-between",
+            "gap": 56,
+            "width": "custom",
+            "custom_width": 50,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "custom",
+            "custom_height": 64,
+            "inherit_color_scheme": false,
+            "color_scheme": "scheme-2",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "hero-apparel-2",
+            "padding-block-start": 0,
+            "padding-block-end": 88,
+            "padding-inline-start": 41,
+            "padding-inline-end": 100
+          },
+          "blocks": {
+            "spacer_6RFKDn": {
+              "type": "spacer",
+              "settings": {
+                "size": "pixel",
+                "percent_size": 100,
+                "pixel_size": 16,
+                "custom_mobile_size": false,
+                "size_mobile": "percent",
+                "percent_size_mobile": 100,
+                "pixel_size_mobile": 120
+              },
+              "blocks": {}
+            },
+            "text_HXaGGe": {
+              "type": "text",
+              "settings": {
+                "text": "<h1><strong>Despierta al constructor<br/>que llevas dentro</strong></h1>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "h1",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground-heading)",
+                "background": true,
+                "background_color": "#273488",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "button_f8myTa": {
+              "type": "button",
+              "settings": {
+                "label": "Descubre Artesanía Latina",
+                "link": "shopify://collections/all",
+                "open_in_new_tab": false,
+                "style_class": "button-secondary",
+                "width": "custom",
+                "custom_width": 66,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "spacer_6RFKDn",
+            "text_HXaGGe",
+            "button_f8myTa"
           ]
         }
       },
       "block_order": [
-        "group_6tFMMq",
-        "group_qEJgmp"
+        "group_c7wHWm",
+        "group_tk6rnE"
       ],
       "name": "t:names.split_showcase",
       "settings": {
@@ -986,6 +1193,7 @@
     "product_list_bBzT46",
     "product_list_ViyKwn",
     "collection_list_L7y4G3",
-    "section_VNrfqa"
+    "section_VNrfqa",
+    "section_hyFrjy"
   ]
 }
