@@ -1012,7 +1012,7 @@
             "vertical_alignment_flex_direction_column": "space-between",
             "gap": 56,
             "width": "custom",
-            "custom_width": 50,
+            "custom_width": 56,
             "width_mobile": "fill",
             "custom_width_mobile": 100,
             "height": "custom",
@@ -1083,7 +1083,7 @@
               "settings": {
                 "text": "<p>Artesanía Latina es una marca con más de 50 años de historia especializada en la concepción, fabricación y comercialización de maquetas en kit a escala de madera y metal. Nuestros modelos, están fabricados con materiales de excelente calidad y con maquinaria de última generación para ofrecer una magnífica experiencia de montaje. </p><p>Tanto si ya eres todo un experto modelista como alguien que se pregunta si este hobby es para ti, tenemos el modelo ideal para ti. </p><p>Disponemos además una completa selección de herramientas, accesorios y complementos para llevar a tus maquetas al siguiente nivel </p><p>Si estás buscando un regalo perfecto para ti o tus allegados, tenemos una extensa selección de Ideas para regalar. </p>",
                 "width": "fit-content",
-                "max_width": "normal",
+                "max_width": "none",
                 "alignment": "left",
                 "type_preset": "rte",
                 "font": "var(--font-body--family)",
