@@ -303,11 +303,13 @@
       cloneSlides() {
         const firstSlide = this.slides[0].cloneNode(true);
         const lastSlide = this.slides[this.slides.length - 1].cloneNode(true);
-        
+  
         this.slidesContainer.appendChild(firstSlide);
         this.slidesContainer.insertBefore(lastSlide, this.slides[0]);
-        
+  
         this.allSlides = this.querySelectorAll('.ai-modal-carousel-slide-{{ ai_gen_id }}');
+        this.slides = this.allSlides; 
+
         this.currentSlide = 1;
         this.slidesContainer.style.transform = `translateX(-${this.currentSlide * 100}%)`;
       }
