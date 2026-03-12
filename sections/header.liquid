@@ -393,6 +393,36 @@
       {{ navigation_bar }}
     </div>
   {% endif %}
+
+  {% if section.settings.show_custom_search %}
+    <div class="header__row header__row--search color-{{ section.settings.color_scheme_bottom }}" style="--search-bar-bg: {{ section.settings.search_bar_bg }}; --search-bar-border: {{ section.settings.search_bar_border }}; --search-btn-bg: {{ section.settings.search_btn_bg }}; --search-btn-color: {{ section.settings.search_btn_color }};">
+      <div class="header__columns spacing-style">
+        <form
+          action="{{ routes.search_url }}"
+          method="get"
+          class="header-search-bar"
+          role="search"
+        >
+          <input type="hidden" name="type" value="product">
+          <input
+            type="search"
+            name="q"
+            placeholder="{{ section.settings.search_placeholder | default: 'Buscar productos...' }}"
+            class="header-search-bar__input"
+            aria-label="{{ section.settings.search_placeholder | default: 'Buscar productos' }}"
+            autocomplete="off"
+          >
+          <button type="submit" class="header-search-bar__btn">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M7 13A6 6 0 1 0 7 1a6 6 0 0 0 0 12ZM14 14l-3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            <span>{{ section.settings.search_button_label | default: 'Buscar' }}</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  {% endif %}
+
 </header-component>
 
 <script
@@ -1356,6 +1386,52 @@
       ],
       "default": "top",
       "visible_if": "{{ section.settings.show_country or section.settings.show_language }}"
+    },
+    {
+      "type": "header",
+      "content": "Barra de búsqueda expandida"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_custom_search",
+      "label": "Mostrar barra de búsqueda",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "search_placeholder",
+      "label": "Placeholder del buscador",
+      "default": "Buscar productos..."
+    },
+    {
+      "type": "text",
+      "id": "search_button_label",
+      "label": "Texto del botón buscar",
+      "default": "Buscar"
+    },
+    {
+      "type": "color",
+      "id": "search_bar_bg",
+      "label": "Fondo del input",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "search_bar_border",
+      "label": "Color del borde",
+      "default": "#E5E0D8"
+    },
+    {
+      "type": "color",
+      "id": "search_btn_bg",
+      "label": "Fondo del botón",
+      "default": "#C8A96E"
+    },
+    {
+      "type": "color",
+      "id": "search_btn_color",
+      "label": "Texto / icono del botón",
+      "default": "#FFFFFF"
     },
     {
       "type": "header",
