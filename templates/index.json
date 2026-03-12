@@ -543,7 +543,7 @@
       },
       "name": "t:names.products_carousel",
       "settings": {
-        "collection": "te-recomendamos",
+        "collection": "top-ventas",
         "layout_type": "carousel",
         "carousel_on_mobile": false,
         "max_products": 4,
