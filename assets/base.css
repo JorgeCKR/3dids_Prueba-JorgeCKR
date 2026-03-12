@@ -4945,7 +4945,7 @@ product-recommendations:has([data-has-recommendations='false']) {
   }
 }
 
-/*Transicion del boton Descubre mas*/
+/*Transicion del boton Descubre mas
 .descubre-hover a{
   display:inline-block;
   transition: transform 0.25s ease;
@@ -4953,4 +4953,4 @@ product-recommendations:has([data-has-recommendations='false']) {
 
 .descubre-hover a:hover{
   transform: scale(1.06);
-}
+}*/
