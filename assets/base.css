@@ -4945,12 +4945,13 @@ product-recommendations:has([data-has-recommendations='false']) {
   }
 }
 
-/*Transicion del boton Descubre mas
-.descubre-hover a{
+/*Transicion del boton Descubre mas*/
+button{
   display:inline-block;
   transition: transform 0.25s ease;
 }
 
-.descubre-hover a:hover{
+.button:hover{
   transform: scale(1.06);
-}*/
+}
+}
