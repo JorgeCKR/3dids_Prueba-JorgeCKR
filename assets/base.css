@@ -4946,7 +4946,7 @@ product-recommendations:has([data-has-recommendations='false']) {
 }
 
 /*Transicion del boton Descubre mas*/
-button{
+.button{
   display:inline-block;
   transition: transform 0.25s ease;
 }
@@ -4954,4 +4954,4 @@ button{
 .button:hover{
   transform: scale(1.06);
 }
-}
+
