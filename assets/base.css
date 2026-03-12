@@ -4946,11 +4946,11 @@ product-recommendations:has([data-has-recommendations='false']) {
 }
 
 /*Transicion del boton Descubre mas*/
-[id^="btn-"] a{
-  transition: all 0.25s ease;
+.descubre-hover a{
+  display:inline-block;
+  transition: transform 0.25s ease;
 }
 
-[id^="btn-"] a:hover{
-  transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+.descubre-hover a:hover{
+  transform: scale(1.06);
 }
