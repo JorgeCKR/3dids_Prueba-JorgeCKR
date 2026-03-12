@@ -642,15 +642,15 @@
           "static": true,
           "settings": {
             "placement": "on_image",
-            "horizontal_alignment": "flex-start",
+            "horizontal_alignment": "center",
             "vertical_alignment": "flex-start",
-            "collection_card_gap": 8,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
+            "collection_card_gap": 40,
+            "inherit_color_scheme": false,
+            "color_scheme": "scheme-4",
             "border": "none",
             "border_width": 1,
             "border_opacity": 100,
-            "border_radius": 0
+            "border_radius": 34
           },
           "blocks": {
             "collection_title_HmDUwb": {
@@ -671,10 +671,25 @@
                 "background": true,
                 "background_color": "#ffffff",
                 "corner_radius": 0,
-                "padding-block-start": 4,
-                "padding-block-end": 4,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
                 "padding-inline-start": 8,
                 "padding-inline-end": 8
+              },
+              "blocks": {}
+            },
+            "button_HP34gf": {
+              "type": "button",
+              "name": "t:names.button",
+              "settings": {
+                "label": "DESCUBRIR",
+                "link": "shopify://collections/all",
+                "open_in_new_tab": false,
+                "style_class": "button-secondary",
+                "width": "custom",
+                "custom_width": 80,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
               },
               "blocks": {}
             },
@@ -697,7 +712,8 @@
             }
           },
           "block_order": [
-            "collection_title_HmDUwb"
+            "collection_title_HmDUwb",
+            "button_HP34gf"
           ]
         }
       },
@@ -706,23 +722,28 @@
       ],
       "name": "t:names.collections_grid",
       "settings": {
-        "collection_list": [],
+        "collection_list": [
+          "maqueta-de-barcos",
+          "maqueta-de-aviones",
+          "herramientas",
+          "herramientas-1"
+        ],
         "layout_type": "grid",
         "carousel_on_mobile": false,
-        "columns": 3,
+        "columns": 4,
         "mobile_columns": "2",
         "mobile_card_size": "60cqw",
-        "columns_gap": 8,
+        "columns_gap": 35,
         "bento_gap": 8,
-        "rows_gap": 8,
+        "rows_gap": 19,
         "max_collections": 4,
         "icons_style": "arrow",
         "icons_shape": "none",
         "section_width": "page-width",
-        "gap": 12,
+        "gap": 27,
         "color_scheme": "",
-        "padding-block-start": 48,
-        "padding-block-end": 48
+        "padding-block-start": 49,
+        "padding-block-end": 78
       }
     }
   },
