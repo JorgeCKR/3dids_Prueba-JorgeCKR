@@ -850,14 +850,14 @@
         "group_9Wmpyr": {
           "type": "group",
           "settings": {
-            "content_direction": "column",
+            "content_direction": "row",
             "vertical_on_mobile": true,
             "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
+            "vertical_alignment": "flex-start",
+            "align_baseline": true,
             "horizontal_alignment_flex_direction_column": "flex-start",
             "vertical_alignment_flex_direction_column": "space-between",
-            "gap": 56,
+            "gap": 0,
             "width": "custom",
             "custom_width": 50,
             "width_mobile": "fill",
@@ -881,9 +881,9 @@
             "open_in_new_tab": false,
             "placeholder": "hero-apparel-2",
             "padding-block-start": 0,
-            "padding-block-end": 88,
-            "padding-inline-start": 41,
-            "padding-inline-end": 100
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
           },
           "blocks": {
             "spacer_McAFJ7": {
@@ -899,24 +899,33 @@
               },
               "blocks": {}
             },
-            "button_MEffY8": {
-              "type": "button",
+            "video_mH9fg3": {
+              "type": "video",
+              "name": "t:names.video",
               "settings": {
-                "label": "Descubre Artesanía Latina",
-                "link": "shopify://collections/all",
-                "open_in_new_tab": false,
-                "style_class": "button-secondary",
-                "width": "custom",
-                "custom_width": 66,
-                "width_mobile": "fit-content",
-                "custom_width_mobile": 100
+                "source": "url",
+                "video_url": "https://youtu.be/LiQRUHBoF-k?list=TLGG-xd8sCYGiZoxMjAzMjAyNg",
+                "video_autoplay": false,
+                "video_loop": true,
+                "alt": "",
+                "custom_width": 100,
+                "custom_width_mobile": 100,
+                "aspect_ratio": "auto",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
               },
               "blocks": {}
             }
           },
           "block_order": [
             "spacer_McAFJ7",
-            "button_MEffY8"
+            "video_mH9fg3"
           ]
         }
       },
