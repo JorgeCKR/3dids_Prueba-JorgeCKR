@@ -370,7 +370,7 @@
                   this.slidesContainer.style.transition = `transform ${this.transitionSpeed}ms linear`;
                 });
               });
-            } else if (this.currentSlide === this.allSlides.length - 1) {
+            } else if (this.currentSlide >= this.slides.length + 1) {
               this.slidesContainer.style.transition = 'none';
               this.currentSlide = 1;
               this.slidesContainer.style.transform = `translateX(-${this.currentSlide * 33.333}%)`;
