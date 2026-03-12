@@ -120,7 +120,7 @@
   }
 
   .ai-modal-carousel-slide-{{ ai_gen_id }} {
-    min-width: 100%;
+    min-width: 33.333%;
     flex-shrink: 0;
     display: flex;
     align-items: center;
@@ -364,7 +364,7 @@
             if (this.currentSlide === 0) {
               this.slidesContainer.style.transition = 'none';
               this.currentSlide = this.slides.length;
-              this.slidesContainer.style.transform = `translateX(-${this.currentSlide * 100}%)`;
+              this.slidesContainer.style.transform = `translateX(-${this.currentSlide * 33.333}%)`;
               requestAnimationFrame(() => {
                 requestAnimationFrame(() => {
                   this.slidesContainer.style.transition = `transform ${this.transitionSpeed}ms linear`;
@@ -373,7 +373,7 @@
             } else if (this.currentSlide === this.allSlides.length - 1) {
               this.slidesContainer.style.transition = 'none';
               this.currentSlide = 1;
-              this.slidesContainer.style.transform = `translateX(-${this.currentSlide * 100}%)`;
+              this.slidesContainer.style.transform = `translateX(-${this.currentSlide * 33.333}%)`;
               requestAnimationFrame(() => {
                 requestAnimationFrame(() => {
                   this.slidesContainer.style.transition = `transform ${this.transitionSpeed}ms linear`;
@@ -403,7 +403,7 @@
       }
 
       updateSlider() {
-        this.slidesContainer.style.transform = `translateX(-${this.currentSlide * 100}%)`;
+        this.slidesContainer.style.transform = `translateX(-${this.currentSlide * 33.333}%)`;
         this.updateDots();
       }
 
