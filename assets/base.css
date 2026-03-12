@@ -4947,9 +4947,10 @@ product-recommendations:has([data-has-recommendations='false']) {
 
 /*Transicion del boton Descubre mas*/
 [id^="btn-"] a{
-  transition: transform 0.25s ease;
+  transition: all 0.25s ease;
 }
 
 [id^="btn-"] a:hover{
-  transform: scale(1.06);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
