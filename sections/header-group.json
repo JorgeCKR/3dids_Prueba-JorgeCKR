@@ -82,7 +82,7 @@
       "settings": {
         "logo_position": "left",
         "menu_position": "center",
-        "menu_row": "bottom",
+        "menu_row": "top",
         "customer_account_menu": "customer-account-main-menu",
         "show_search": true,
         "search_position": "left",
