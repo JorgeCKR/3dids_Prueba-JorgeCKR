@@ -97,7 +97,7 @@
           "picker_enabled": true,
           "icon_color": "#6f6f6f",
           "button_background_color": "#d6d6d6",
-          "position": "below",
+          "position": "above",
           "placeholder": "Search",
           "width": 250,
           "height": 37,
