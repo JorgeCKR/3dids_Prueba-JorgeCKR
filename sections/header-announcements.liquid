@@ -13,34 +13,415 @@
   class="announcement-bar spacing-style section section--{{ section.settings.section_width }} color-{{ section.settings.color_scheme }}"
   style="{% render 'spacing-padding', settings: section.settings %}; --border-bottom-width: {{ section.settings.divider_width }}px;"
 >
-  {% liquid
-    assign autoplay = false
-    assign show_arrows = false
-    if section.blocks.size > 1
-      assign autoplay = true
-      assign show_arrows = true
-    endif
-  %}
+  <div class="announcement-bar__layout">
 
-  <announcement-bar-component
-    class="announcement-bar__slider"
-    {% if autoplay == true %}
-      autoplay="{{ section.settings.speed }}" aria-live="polite"
-    {% endif %}
-  >
-    {% if show_arrows %}
-      {% render 'slideshow-arrows', icon_style: 'chevron' %}
-    {% endif %}
-
-    <div class="announcement-bar__slides">
-      {% content_for 'blocks' %}
+    {%- comment -%} ── IZQUIERDA: Icono ubicación + país actual → abre modal ── {%- endcomment -%}
+    <div class="announcement-bar__side announcement-bar__side--left">
+      <button
+        type="button"
+        class="announcement-bar__location-btn"
+        aria-haspopup="dialog"
+        aria-controls="location-modal"
+        on:click="#location-modal/showDialog"
+      >
+        <span class="announcement-bar__location-icon">
+          <svg width="11" height="14" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 0C3.239 0 1 2.239 1 5c0 4.418 5 11 5 11s5-6.582 5-11c0-2.761-2.239-5-5-5Zm0 7.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Z" fill="currentColor"/>
+          </svg>
+        </span>
+        <span class="announcement-bar__location-name">
+          {{ localization.country.name }}
+        </span>
+      </button>
     </div>
-  </announcement-bar-component>
+
+    {%- comment -%} ── CENTRO: Slider de anuncios (código original intacto) ── {%- endcomment -%}
+    <div class="announcement-bar__center">
+      {% liquid
+        assign autoplay = false
+        assign show_arrows = false
+        if section.blocks.size > 1
+          assign autoplay = true
+          assign show_arrows = true
+        endif
+      %}
+
+      <announcement-bar-component
+        class="announcement-bar__slider"
+        {% if autoplay == true %}
+          autoplay="{{ section.settings.speed }}" aria-live="polite"
+        {% endif %}
+      >
+        {% if show_arrows %}
+          {% render 'slideshow-arrows', icon_style: 'chevron' %}
+        {% endif %}
+
+        <div class="announcement-bar__slides">
+          {% content_for 'blocks' %}
+        </div>
+      </announcement-bar-component>
+    </div>
+
+    {%- comment -%} ── DERECHA: Profesional + Selector de idioma ── {%- endcomment -%}
+    <div class="announcement-bar__side announcement-bar__side--right">
+
+      {%- comment -%} Enlace Profesional {%- endcomment -%}
+      {% if section.settings.show_professional_link %}
+        <a
+          href="{{ section.settings.professional_url }}"
+          class="announcement-bar__side-link"
+        >
+          {{ section.settings.professional_label | default: 'Profesional' }}
+        </a>
+        <span class="announcement-bar__side-divider">|</span>
+      {% endif %}
+
+      {%- comment -%} Selector de idioma con banderas {%- endcomment -%}
+      {% if section.settings.show_language_selector %}
+        <div class="announcement-bar__lang">
+          <div class="announcement-bar__lang-selector">
+            <button
+              type="button"
+              class="announcement-bar__lang-trigger"
+              aria-expanded="false"
+              aria-controls="announcement-lang-dropdown"
+            >
+              {%- assign current_locale = request.locale.iso_code -%}
+              {%- case current_locale -%}
+                {%- when 'es' -%}{%- assign flag = '🇪🇸' -%}
+                {%- when 'en' -%}{%- assign flag = '🇬🇧' -%}
+                {%- when 'fr' -%}{%- assign flag = '🇫🇷' -%}
+                {%- when 'de' -%}{%- assign flag = '🇩🇪' -%}
+                {%- when 'it' -%}{%- assign flag = '🇮🇹' -%}
+                {%- when 'nl' -%}{%- assign flag = '🇳🇱' -%}
+                {%- when 'pt' -%}{%- assign flag = '🇵🇹' -%}
+                {%- when 'ru' -%}{%- assign flag = '🇷🇺' -%}
+                {%- when 'pl' -%}{%- assign flag = '🇵🇱' -%}
+                {%- when 'cs' -%}{%- assign flag = '🇨🇿' -%}
+                {%- when 'sv' -%}{%- assign flag = '🇸🇪' -%}
+                {%- when 'da' -%}{%- assign flag = '🇩🇰' -%}
+                {%- else -%}{%- assign flag = '🌐' -%}
+              {%- endcase -%}
+              <span class="announcement-bar__lang-flag">{{ flag }}</span>
+              <span class="announcement-bar__lang-name">{{ request.locale.endonym_name }}</span>
+              <span class="announcement-bar__lang-caret">
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                  <path d="M2 3.5l3 3 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+              </span>
+            </button>
+
+            <ul
+              id="announcement-lang-dropdown"
+              class="announcement-bar__lang-dropdown announcement-bar__lang-dropdown--right"
+              role="list"
+              hidden
+            >
+              {% for locale in shop.published_locales %}
+                {%- case locale.iso_code -%}
+                  {%- when 'es' -%}{%- assign lc_flag = '🇪🇸' -%}
+                  {%- when 'en' -%}{%- assign lc_flag = '🇬🇧' -%}
+                  {%- when 'fr' -%}{%- assign lc_flag = '🇫🇷' -%}
+                  {%- when 'de' -%}{%- assign lc_flag = '🇩🇪' -%}
+                  {%- when 'it' -%}{%- assign lc_flag = '🇮🇹' -%}
+                  {%- when 'nl' -%}{%- assign lc_flag = '🇳🇱' -%}
+                  {%- when 'pt' -%}{%- assign lc_flag = '🇵🇹' -%}
+                  {%- when 'ru' -%}{%- assign lc_flag = '🇷🇺' -%}
+                  {%- when 'pl' -%}{%- assign lc_flag = '🇵🇱' -%}
+                  {%- when 'cs' -%}{%- assign lc_flag = '🇨🇿' -%}
+                  {%- when 'sv' -%}{%- assign lc_flag = '🇸🇪' -%}
+                  {%- when 'da' -%}{%- assign lc_flag = '🇩🇰' -%}
+                  {%- else -%}{%- assign lc_flag = '🌐' -%}
+                {%- endcase -%}
+                <li>
+                  <a
+                    href="{{ locale.root_url }}"
+                    class="announcement-bar__lang-option {% if locale.iso_code == request.locale.iso_code %}is-active{% endif %}"
+                    lang="{{ locale.iso_code }}"
+                    {% if locale.iso_code == request.locale.iso_code %}aria-current="true"{% endif %}
+                  >
+                    <span class="announcement-bar__lang-flag">{{ lc_flag }}</span>
+                    <span>{{ locale.endonym_name }}</span>
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      {% endif %}
+
+    </div>
+  </div>
 </aside>
 
+{%- comment -%} ── MODAL DE UBICACIÓN ── {%- endcomment -%}
+{% if section.settings.show_location %}
+  <dialog-component id="location-modal">
+    <dialog
+      ref="dialog"
+      class="location-modal dialog-modal drawer"
+      aria-labelledby="location-modal-title"
+      aria-modal="true"
+    >
+      <div class="location-modal__header">
+        <h2 id="location-modal-title" class="location-modal__title">
+          {{ section.settings.modal_title | default: 'Selecciona tu ubicación' }}
+        </h2>
+        <button
+          type="button"
+          class="location-modal__close button-unstyled"
+          on:click="dialog-component/closeDialog"
+          aria-label="Cerrar"
+        >
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M2 2l12 12M14 2L2 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="location-modal__body">
+
+        {%- comment -%} Selector de país/región {%- endcomment -%}
+        {% form 'localization', id: 'location-modal-form' %}
+          <div class="location-modal__section">
+            <label class="location-modal__label" for="modal-country-selector">
+              {{ section.settings.country_label | default: 'País / Región' }}
+            </label>
+            <div class="location-modal__select-wrapper">
+              <select
+                name="country_code"
+                id="modal-country-selector"
+                class="location-modal__select"
+                onchange="this.form.submit()"
+              >
+                {% for country in localization.available_countries %}
+                  <option
+                    value="{{ country.iso_code }}"
+                    {% if country.iso_code == localization.country.iso_code %}selected{% endif %}
+                  >
+                    {{ country.name }} ({{ country.currency.iso_code }} {{ country.currency.symbol }})
+                  </option>
+                {% endfor %}
+              </select>
+              <span class="location-modal__select-caret">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                  <path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+              </span>
+            </div>
+          </div>
+
+          <button type="submit" class="location-modal__submit button">
+            {{ section.settings.modal_confirm | default: 'Confirmar' }}
+          </button>
+        {% endform %}
+
+        {%- comment -%} Separador {%- endcomment -%}
+        <div class="location-modal__divider">
+          <span>{{ section.settings.modal_or | default: 'o' }}</span>
+        </div>
+
+        {%- comment -%} Login / Cuenta {%- endcomment -%}
+        <div class="location-modal__section">
+          <p class="location-modal__label">
+            {{ section.settings.modal_account_text | default: '¿Ya tienes cuenta?' }}
+          </p>
+          {% if customer %}
+            <a href="{{ routes.account_url }}" class="location-modal__account-link button button-secondary">
+              {{ section.settings.account_label | default: 'Mi cuenta' }}
+            </a>
+          {% else %}
+            <a href="{{ routes.account_login_url }}" class="location-modal__account-link button button-secondary">
+              {{ section.settings.login_label | default: 'Iniciar sesión' }}
+            </a>
+            <a href="{{ routes.account_register_url }}" class="location-modal__register-link">
+              {{ section.settings.register_label | default: 'Crear cuenta' }}
+            </a>
+          {% endif %}
+        </div>
+
+      </div>
+    </dialog>
+  </dialog-component>
+{% endif %}
+
 {% stylesheet %}
+  /* ── Barra original ── */
   .announcement-bar {
     border-block-end: var(--border-bottom-width) solid var(--color-border);
+  }
+
+  /* ── Layout de 3 columnas ── */
+  .announcement-bar__layout {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    width: 100%;
+    gap: 8px;
+  }
+
+  /* ── Lados ── */
+  .announcement-bar__side {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+  }
+
+  .announcement-bar__side--right {
+    justify-content: flex-end;
+  }
+
+  .announcement-bar__side-divider {
+    color: rgb(var(--color-foreground-rgb) / 30%);
+    font-size: 10px;
+  }
+
+  .announcement-bar__side-link {
+    color: var(--color-foreground);
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    opacity: 0.85;
+    transition: opacity 0.15s;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    font-family: inherit;
+  }
+
+  .announcement-bar__side-link:hover {
+    opacity: 1;
+    text-decoration: underline;
+  }
+
+  /* ── Ubicación ── */
+  .announcement-bar__location-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    color: var(--color-foreground);
+    font-family: inherit;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    opacity: 0.85;
+    transition: opacity 0.15s;
+  }
+
+  .announcement-bar__location-btn:hover {
+    opacity: 1;
+    text-decoration: underline;
+  }
+
+  .announcement-bar__location-icon {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  .announcement-bar__location-name {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+  }
+
+  /* ── Selector de idioma ── */
+  .announcement-bar__lang {
+    position: relative;
+  }
+
+  .announcement-bar__lang-trigger {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--color-foreground);
+    font-family: inherit;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    padding: 0;
+    opacity: 0.85;
+    transition: opacity 0.15s;
+  }
+
+  .announcement-bar__lang-trigger:hover {
+    opacity: 1;
+  }
+
+  .announcement-bar__lang-flag {
+    font-size: 14px;
+    line-height: 1;
+  }
+
+  .announcement-bar__lang-caret {
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s ease;
+  }
+
+  .announcement-bar__lang-trigger[aria-expanded='true'] .announcement-bar__lang-caret {
+    transform: rotate(180deg);
+  }
+
+  .announcement-bar__lang-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  background: var(--color-background);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  box-shadow: 0 4px 16px rgb(0 0 0 / 12%);
+  list-style: none;
+  margin: 0;
+  padding: 4px 0;
+  z-index: var(--layer-raised, 200);
+  min-width: 160px;
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+/* Cuando está en columna derecha, abre hacia la izquierda */
+.announcement-bar__lang-dropdown--right {
+  left: auto;
+  right: 0;
+}
+
+  .announcement-bar__lang-dropdown[hidden] {
+    display: none;
+  }
+
+  .announcement-bar__lang-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
+    text-decoration: none;
+    color: var(--color-foreground);
+    font-size: 12px;
+    transition: background 0.15s;
+  }
+
+  .announcement-bar__lang-option:hover {
+    background: rgb(var(--color-foreground-rgb) / 6%);
+  }
+
+  .announcement-bar__lang-option.is-active {
+    font-weight: 700;
+  }
+
+  /* ── Centro: conserva el slider original ── */
+  .announcement-bar__center {
+    width: 100%;
   }
 
   .announcement-bar__slider {
@@ -48,10 +429,6 @@
     flex-direction: row;
     align-items: center;
     position: relative;
-
-    @media screen and (max-width: 749px) {
-      grid-column: 1 / -1;
-    }
   }
 
   .announcement-bar__slides {
@@ -94,14 +471,6 @@
     justify-content: center;
     opacity: 1;
     animation: none;
-
-    @media screen and (min-width: 750px) {
-      --slideshow-control-offset: calc((var(--button-size) - var(--icon-size-xs)) / 2);
-
-      .section--page-width &.slideshow-control--previous {
-        transform: translateX(var(--slideshow-control-offset));
-      }
-    }
   }
 
   .announcement-bar__slider .slideshow-control .svg-wrapper {
@@ -121,7 +490,191 @@
     position: absolute;
     inset: 0;
   }
+
+  /* ── Responsive: ocultar lados en móvil ── */
+  @media screen and (max-width: 749px) {
+    .announcement-bar__layout {
+      grid-template-columns: 1fr;
+    }
+
+    .announcement-bar__side {
+      display: none;
+    }
+
+    .announcement-bar__center {
+      grid-column: 1 / -1;
+    }
+  }
+
+  /* ── Modal de ubicación ── */
+  .location-modal {
+    width: min(480px, 95vw);
+    padding: 0;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 8px 40px rgb(0 0 0 / 18%);
+  }
+
+  .location-modal__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 24px 16px;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .location-modal__title {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+    color: var(--color-foreground);
+  }
+
+  .location-modal__close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    color: var(--color-foreground);
+    transition: background 0.15s;
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0;
+  }
+
+  .location-modal__close:hover {
+    background: rgb(var(--color-foreground-rgb) / 8%);
+  }
+
+  .location-modal__body {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .location-modal__section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .location-modal__label {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-foreground);
+    margin: 0;
+    opacity: 0.7;
+  }
+
+  .location-modal__select-wrapper {
+    position: relative;
+  }
+
+  .location-modal__select {
+    width: 100%;
+    padding: 10px 36px 10px 12px;
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    background: var(--color-background);
+    color: var(--color-foreground);
+    font-size: 14px;
+    font-family: inherit;
+    appearance: none;
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.15s;
+  }
+
+  .location-modal__select:focus {
+    border-color: var(--color-primary, #C8A96E);
+  }
+
+  .location-modal__select-caret {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: var(--color-foreground);
+    opacity: 0.5;
+  }
+
+  .location-modal__submit {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .location-modal__divider {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--color-foreground);
+    opacity: 0.4;
+    font-size: 12px;
+  }
+
+  .location-modal__divider::before,
+  .location-modal__divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--color-border);
+  }
+
+  .location-modal__account-link {
+    text-align: center;
+  }
+
+  .location-modal__register-link {
+    text-align: center;
+    font-size: 12px;
+    color: var(--color-foreground);
+    opacity: 0.6;
+    text-decoration: underline;
+  }
+
+  .location-modal__register-link:hover {
+    opacity: 1;
+  }
 {% endstylesheet %}
+
+<script>
+  // Dropdown de idioma — toggle accesible
+  (function () {
+    const trigger = document.querySelector('.announcement-bar__lang-trigger');
+    const dropdown = document.getElementById('announcement-lang-dropdown');
+    if (!trigger || !dropdown) return;
+
+    trigger.addEventListener('click', function () {
+      const isOpen = trigger.getAttribute('aria-expanded') === 'true';
+      trigger.setAttribute('aria-expanded', String(!isOpen));
+      dropdown.hidden = isOpen;
+    });
+
+    // Cerrar al hacer click fuera
+    document.addEventListener('click', function (e) {
+      if (!trigger.contains(e.target) && !dropdown.contains(e.target)) {
+        trigger.setAttribute('aria-expanded', 'false');
+        dropdown.hidden = true;
+      }
+    });
+
+    // Cerrar con Escape
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') {
+        trigger.setAttribute('aria-expanded', 'false');
+        dropdown.hidden = true;
+        trigger.focus();
+      }
+    });
+  })();
+</script>
 
 {% schema %}
 {
@@ -146,6 +699,112 @@
     },
     {
       "type": "header",
+      "content": "Columna izquierda"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_professional_link",
+      "label": "Mostrar enlace Profesional",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "professional_label",
+      "label": "Texto enlace profesional",
+      "default": "Profesional",
+      "visible_if": "{{ section.settings.show_professional_link == true }}"
+    },
+    {
+      "type": "url",
+      "id": "professional_url",
+      "label": "URL enlace profesional",
+      "visible_if": "{{ section.settings.show_professional_link == true }}"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_language_selector",
+      "label": "Mostrar selector de idioma",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Columna derecha"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_location",
+      "label": "Mostrar selector de ubicación",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "location_label",
+      "label": "Texto de ubicación por defecto",
+      "default": "España",
+      "visible_if": "{{ section.settings.show_location == true }}"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_login",
+      "label": "Mostrar enlace de sesión",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "login_label",
+      "label": "Texto iniciar sesión",
+      "default": "Iniciar sesión",
+      "visible_if": "{{ section.settings.show_login == true }}"
+    },
+    {
+      "type": "text",
+      "id": "account_label",
+      "label": "Texto mi cuenta (sesión activa)",
+      "default": "Mi cuenta",
+      "visible_if": "{{ section.settings.show_login == true }}"
+    },
+    {
+      "type": "header",
+      "content": "Modal de ubicación"
+    },
+    {
+      "type": "text",
+      "id": "modal_title",
+      "label": "Título del modal",
+      "default": "Selecciona tu ubicación"
+    },
+    {
+      "type": "text",
+      "id": "country_label",
+      "label": "Etiqueta selector de país",
+      "default": "País / Región"
+    },
+    {
+      "type": "text",
+      "id": "modal_confirm",
+      "label": "Texto botón confirmar",
+      "default": "Confirmar"
+    },
+    {
+      "type": "text",
+      "id": "modal_or",
+      "label": "Texto separador",
+      "default": "o"
+    },
+    {
+      "type": "text",
+      "id": "modal_account_text",
+      "label": "Texto sección cuenta",
+      "default": "¿Ya tienes cuenta?"
+    },
+    {
+      "type": "text",
+      "id": "register_label",
+      "label": "Texto crear cuenta",
+      "default": "Crear cuenta"
+    },
+    {
+      "type": "header",
       "content": "t:content.appearance"
     },
     {
@@ -153,14 +812,8 @@
       "id": "section_width",
       "label": "t:settings.section_width",
       "options": [
-        {
-          "value": "page-width",
-          "label": "t:options.page"
-        },
-        {
-          "value": "full-width",
-          "label": "t:options.full"
-        }
+        { "value": "page-width", "label": "t:options.page" },
+        { "value": "full-width", "label": "t:options.full" }
       ],
       "default": "page-width"
     },
@@ -218,3 +871,4 @@
   ]
 }
 {% endschema %}
+
