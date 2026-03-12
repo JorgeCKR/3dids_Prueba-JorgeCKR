@@ -641,10 +641,10 @@
           "name": "t:names.collection_card",
           "static": true,
           "settings": {
-            "placement": "on_image",
+            "placement": "below_image",
             "horizontal_alignment": "center",
             "vertical_alignment": "flex-start",
-            "collection_card_gap": 40,
+            "collection_card_gap": 48,
             "inherit_color_scheme": false,
             "color_scheme": "scheme-9ff883f5-3d55-48da-9f8c-c9f93b273946",
             "border": "none",
@@ -661,7 +661,7 @@
                 "max_width": "narrow",
                 "alignment": "center",
                 "type_preset": "custom",
-                "font": "var(--font-subheading--family)",
+                "font": "var(--font-heading--family)",
                 "font_size": "1.25rem",
                 "line_height": "tight",
                 "letter_spacing": "normal",
@@ -672,9 +672,23 @@
                 "background_color": "#ffffff",
                 "corner_radius": 0,
                 "padding-block-start": 0,
-                "padding-block-end": 60,
+                "padding-block-end": 0,
                 "padding-inline-start": 8,
                 "padding-inline-end": 8
+              },
+              "blocks": {}
+            },
+            "spacer_HxQw4V": {
+              "type": "spacer",
+              "name": "t:names.spacer",
+              "settings": {
+                "size": "percent",
+                "percent_size": 59,
+                "pixel_size": 120,
+                "custom_mobile_size": false,
+                "size_mobile": "percent",
+                "percent_size_mobile": 100,
+                "pixel_size_mobile": 120
               },
               "blocks": {}
             },
@@ -698,10 +712,10 @@
               "name": "t:names.collection_card_image",
               "static": true,
               "settings": {
-                "image_ratio": "adapt",
+                "image_ratio": "square",
                 "toggle_overlay": false,
                 "overlay_color": "#00000026",
-                "overlay_style": "solid",
+                "overlay_style": "gradient",
                 "gradient_direction": "to top",
                 "border": "none",
                 "border_width": 1,
@@ -713,6 +727,7 @@
           },
           "block_order": [
             "collection_title_HmDUwb",
+            "spacer_HxQw4V",
             "button_HP34gf"
           ]
         }
