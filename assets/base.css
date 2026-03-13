@@ -4945,7 +4945,7 @@ product-recommendations:has([data-has-recommendations='false']) {
   }
 }
 
-/*Transicion del boton Descubre mas*/
+/*Transicion del boton */
 .button{
   display:inline-block;
   transition: transform 0.25s ease;
@@ -4955,7 +4955,7 @@ product-recommendations:has([data-has-recommendations='false']) {
   transform: scale(1.06);
 }
 
-/* ── Custom Search Bar ── */
+/* ── Custom Search Bar ── 
 .header__row--search {
   border-top: 1px solid var(--color-border);
 }
@@ -5017,4 +5017,4 @@ product-recommendations:has([data-has-recommendations='false']) {
   .header__row--search {
     display: none;
   }
-}
+}*/
