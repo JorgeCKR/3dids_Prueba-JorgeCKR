@@ -71,7 +71,7 @@
           "settings": {
             "menu": "main-menu",
             "color_scheme": "scheme-3d166c23-f1e0-4942-a1f4-898055fd3ecd",
-            "type_font_primary_size": "1rem",
+            "type_font_primary_size": "1.125rem",
             "menu_font_style": "inverse_large",
             "type_font_primary_link": "heading",
             "type_case_primary_link": "none",
