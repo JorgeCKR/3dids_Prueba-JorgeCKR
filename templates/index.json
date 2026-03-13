@@ -1411,14 +1411,14 @@
             "height": "fill",
             "custom_height": 100,
             "inherit_color_scheme": false,
-            "color_scheme": "scheme-5",
-            "background_media": "image",
+            "color_scheme": "scheme-9ff883f5-3d55-48da-9f8c-c9f93b273946",
+            "background_media": "none",
             "video_position": "cover",
             "background_image_position": "cover",
             "border": "none",
             "border_width": 1,
             "border_opacity": 100,
-            "border_radius": 0,
+            "border_radius": 47,
             "toggle_overlay": false,
             "overlay_color": "#00000026",
             "overlay_style": "solid",
@@ -1427,7 +1427,7 @@
             "open_in_new_tab": false,
             "placeholder": "hero-apparel-2",
             "padding-block-start": 0,
-            "padding-block-end": 40,
+            "padding-block-end": 0,
             "padding-inline-start": 0,
             "padding-inline-end": 0
           },
@@ -1455,19 +1455,6 @@
               },
               "blocks": {}
             },
-            "spacer_ghTWhU": {
-              "type": "spacer",
-              "settings": {
-                "size": "pixel",
-                "percent_size": 100,
-                "pixel_size": 16,
-                "custom_mobile_size": false,
-                "size_mobile": "percent",
-                "percent_size_mobile": 100,
-                "pixel_size_mobile": 120
-              },
-              "blocks": {}
-            },
             "text_Mk4hhp": {
               "type": "text",
               "name": "t:names.heading",
@@ -1487,7 +1474,7 @@
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
-                "padding-block-start": 84,
+                "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
@@ -1497,10 +1484,10 @@
             "button_NDtabK": {
               "type": "button",
               "settings": {
-                "label": "Shop now",
+                "label": "SABER MÁS",
                 "link": "shopify://collections/all",
                 "open_in_new_tab": false,
-                "style_class": "link",
+                "style_class": "button-secondary",
                 "width": "fit-content",
                 "custom_width": 100,
                 "width_mobile": "fit-content",
@@ -1511,7 +1498,6 @@
           },
           "block_order": [
             "image_UTJhzw",
-            "spacer_ghTWhU",
             "text_Mk4hhp",
             "button_NDtabK"
           ]
