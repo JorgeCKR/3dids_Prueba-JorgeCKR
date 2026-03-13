@@ -164,6 +164,82 @@
         "padding-block-end": 30
       }
     },
+    "section_Rk8r8W": {
+      "type": "section",
+      "blocks": {
+        "text_gVYfye": {
+          "type": "text",
+          "settings": {
+            "text": "<p><a href=\"https://artesanialatina.net/es/p/21-sequra\">Págalo a tu ritmo en 3, 6, 12 o 18 meses con SeQura</a></p>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "h5",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "button_btr7c9": {
+          "type": "button",
+          "settings": {
+            "label": "Saber más",
+            "link": "shopify://collections/all",
+            "open_in_new_tab": false,
+            "style_class": "button",
+            "width": "fit-content",
+            "custom_width": 100,
+            "width_mobile": "fit-content",
+            "custom_width_mobile": 100
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_gVYfye",
+        "button_btr7c9"
+      ],
+      "name": "t:names.pull_quote",
+      "settings": {
+        "content_direction": "row",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": true,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 0,
+        "section_width": "page-width",
+        "section_height": "custom",
+        "section_height_custom": 0,
+        "color_scheme": "scheme-9a916f5e-d70d-4f38-868b-872b773e9774",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 64,
+        "padding-block-end": 64
+      }
+    },
     "footer_utilities_jLGE8U": {
       "type": "footer-utilities",
       "blocks": {
@@ -222,6 +298,7 @@
   },
   "order": [
     "footer_m9NzUG",
+    "section_Rk8r8W",
     "footer_utilities_jLGE8U"
   ]
 }
