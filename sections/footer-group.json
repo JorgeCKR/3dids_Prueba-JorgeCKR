@@ -600,25 +600,22 @@
               },
               "blocks": {}
             },
-            "text_TAABgV": {
-              "type": "text",
-              "name": "t:names.description",
+            "image_qGyhkm": {
+              "type": "image",
+              "name": "t:names.image",
               "settings": {
-                "text": "<p>SAFS</p>",
-                "width": "100%",
-                "max_width": "normal",
-                "alignment": "center",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
+                "image": "shopify://shop_images/Captura_de_pantalla_2026-03-13_174057.png",
+                "link": "",
+                "image_ratio": "adapt",
+                "width": "custom",
+                "custom_width": 71,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
@@ -629,7 +626,7 @@
           },
           "block_order": [
             "text_MqgjtU",
-            "text_TAABgV"
+            "image_qGyhkm"
           ]
         }
       },
