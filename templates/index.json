@@ -344,6 +344,20 @@
         "padding-block-end": 48
       }
     },
+    "divider_MLJza8": {
+      "type": "divider",
+      "name": "t:names.divider_section",
+      "settings": {
+        "color_scheme": "scheme-a32d1e81-c6f1-46d9-8af2-28bbdae5e812",
+        "section_width": "full-width",
+        "thickness": 1,
+        "corner_radius": "square",
+        "width_percent": 100,
+        "alignment_horizontal": "center",
+        "padding-block-start": 39,
+        "padding-block-end": 16
+      }
+    },
     "product_list_ViyKwn": {
       "type": "product-list",
       "blocks": {
@@ -1163,7 +1177,7 @@
       "type": "divider",
       "name": "t:names.divider_section",
       "settings": {
-        "color_scheme": "",
+        "color_scheme": "scheme-a32d1e81-c6f1-46d9-8af2-28bbdae5e812",
         "section_width": "full-width",
         "thickness": 1,
         "corner_radius": "square",
@@ -1542,7 +1556,7 @@
       "type": "divider",
       "name": "t:names.divider_section",
       "settings": {
-        "color_scheme": "scheme-6",
+        "color_scheme": "scheme-a32d1e81-c6f1-46d9-8af2-28bbdae5e812",
         "section_width": "full-width",
         "thickness": 1,
         "corner_radius": "square",
@@ -2022,6 +2036,7 @@
     "hero_jVaWmY",
     "177325513440194141",
     "product_list_bBzT46",
+    "divider_MLJza8",
     "product_list_ViyKwn",
     "collection_list_L7y4G3",
     "section_VNrfqa",
