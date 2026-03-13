@@ -1811,7 +1811,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h2><strong>Reposición de piezas</strong></h2>",
+                "text": "<h2><strong>La comunidad para los amantes del modelismo</strong></h2>",
                 "width": "100%",
                 "max_width": "none",
                 "alignment": "left",
@@ -1888,6 +1888,20 @@
         "padding-block-start": 0,
         "padding-block-end": 0
       }
+    },
+    "divider_Vb3zz9": {
+      "type": "divider",
+      "name": "t:names.divider_section",
+      "settings": {
+        "color_scheme": "",
+        "section_width": "full-width",
+        "thickness": 1,
+        "corner_radius": "square",
+        "width_percent": 100,
+        "alignment_horizontal": "center",
+        "padding-block-start": 16,
+        "padding-block-end": 16
+      }
     }
   },
   "order": [
@@ -1898,6 +1912,7 @@
     "collection_list_L7y4G3",
     "section_VNrfqa",
     "section_JhN9Dj",
+    "divider_Vb3zz9",
     "section_6kH8my",
     "section_hHPUPL"
   ]
