@@ -1959,6 +1959,26 @@
           },
           "blocks": {}
         },
+        "social_links_eqVFbU": {
+          "type": "social-links",
+          "name": "t:names.social_media_links",
+          "settings": {
+            "facebook_url": "https://www.facebook.com/ArtesaniaLatina.net/",
+            "instagram_url": "https://www.instagram.com/artesanialatina_oficial",
+            "youtube_url": "https://www.youtube.com/channel/UCIzu-_drkkuu_5I1-Y7J1wQ",
+            "tiktok_url": "",
+            "twitter_url": "",
+            "threads_url": "",
+            "linkedin_url": "",
+            "bluesky_url": "",
+            "snapchat_url": "",
+            "pinterest_url": "",
+            "tumblr_url": "",
+            "vimeo_url": "",
+            "custom_url": ""
+          },
+          "blocks": {}
+        },
         "text_TYDeyg": {
           "type": "text",
           "settings": {
@@ -2002,6 +2022,7 @@
       },
       "block_order": [
         "text_rHh9qT",
+        "social_links_eqVFbU",
         "text_TYDeyg",
         "button_nVHyeN"
       ],
