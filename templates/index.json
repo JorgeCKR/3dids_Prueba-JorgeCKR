@@ -167,7 +167,7 @@
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
-                "text": "<h3>{{ closest.collection.title }}</h3>",
+                "text": "<h3><strong>{{ closest.collection.title }}</strong></h3>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
@@ -385,7 +385,7 @@
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
-                "text": "<h3>{{ closest.collection.title }}</h3>",
+                "text": "<h3><strong>{{ closest.collection.title }}</strong></h3>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
