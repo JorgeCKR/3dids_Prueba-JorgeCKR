@@ -133,7 +133,7 @@
                 "border_width": 1,
                 "border_radius": 100,
                 "input_type_preset": "paragraph",
-                "style_class": "button-unstyled",
+                "style_class": "button",
                 "display_type": "text",
                 "label": "SUSCRÍBASE A",
                 "integrated_button": true,
