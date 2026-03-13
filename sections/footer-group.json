@@ -578,9 +578,9 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h2>Customer care</h2>",
+                "text": "<h2>MÉTODOS DE PAGO</h2>",
                 "width": "100%",
-                "max_width": "normal",
+                "max_width": "none",
                 "alignment": "center",
                 "type_preset": "h4",
                 "font": "var(--font-body--family)",
@@ -604,7 +604,7 @@
               "type": "text",
               "name": "t:names.description",
               "settings": {
-                "text": "<p>We're always on your side: keeping our loyal customers happy is our top priority and number one goal.</p>",
+                "text": "<p>SAFS</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
@@ -668,61 +668,6 @@
         "padding-block-end": 48
       }
     },
-    "footer_utilities_hcnNqq": {
-      "type": "footer-utilities",
-      "blocks": {
-        "footer_policy_list_r8UmUK": {
-          "type": "footer-policy-list",
-          "settings": {
-            "font_size": "0.75rem",
-            "case": "none"
-          },
-          "blocks": {}
-        },
-        "footer_policy_list_RBFtHr": {
-          "type": "footer-policy-list",
-          "name": "t:names.policy_list",
-          "settings": {
-            "font_size": "0.75rem",
-            "case": "none"
-          },
-          "blocks": {}
-        },
-        "social_links_kL9GPz": {
-          "type": "social-links",
-          "settings": {
-            "facebook_url": "",
-            "instagram_url": "",
-            "youtube_url": "",
-            "tiktok_url": "",
-            "twitter_url": "",
-            "threads_url": "",
-            "linkedin_url": "",
-            "bluesky_url": "",
-            "snapchat_url": "",
-            "pinterest_url": "",
-            "tumblr_url": "",
-            "vimeo_url": "",
-            "custom_url": ""
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "footer_policy_list_r8UmUK",
-        "footer_policy_list_RBFtHr",
-        "social_links_kL9GPz"
-      ],
-      "name": "t:names.policies_and_links",
-      "settings": {
-        "section_width": "page-width",
-        "gap": 24,
-        "divider_thickness": 1,
-        "color_scheme": "",
-        "padding-block-start": 100,
-        "padding-block-end": 100
-      }
-    },
     "footer_utilities_jLGE8U": {
       "type": "footer-utilities",
       "blocks": {
@@ -783,7 +728,6 @@
     "footer_m9NzUG",
     "section_Rk8r8W",
     "section_4UMphD",
-    "footer_utilities_hcnNqq",
     "footer_utilities_jLGE8U"
   ]
 }
