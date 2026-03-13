@@ -92,7 +92,7 @@
     endif
   endif
   capture search
-    render 'search', style: search_style, class: search_class, display_style: section.settings.actions_display_style
+    render 'search', style: search_style, class: search_class, display_style: section.settings.actions_display_style, placeholder: section.settings.al_search_placeholder
   endcapture
 
   # Skip drawer search under specific conditions:
@@ -106,7 +106,7 @@
   if section.settings.search_row == 'bottom' or search_style != 'none' and skip_drawer_search == false
     # Mobile search duplicate for when search is not in the right order for mobile layout
     capture drawer_search
-      render 'search', class: 'search-action--hidden-on-menu', style: search_style, display_style: section.settings.actions_display_style
+      render 'search', class: 'search-action--hidden-on-menu', style: search_style, display_style: section.settings.actions_display_style, placeholder: section.settings.al_search_placeholder
     endcapture
   endif
 
@@ -309,6 +309,12 @@
   {% endif %}
   style="
     --color-scheme-top-row: rgba({{ section.settings.color_scheme_top.settings.background.rgba }});
+    --search-inline-border-radius: {{ section.settings.al_search_radius }}px;
+    --search-inline-border-color: {{ section.settings.al_search_border }};
+    --search-inline-bg: {{ section.settings.al_search_bg }};
+    --search-inline-icon-color: {{ section.settings.al_search_icon }};
+    --search-inline-focus-color: {{ section.settings.al_search_focus }};
+    --search-inline-width: {{ section.settings.al_search_width }}px;
     --color-scheme-bottom-row: rgba({{ section.settings.color_scheme_bottom.settings.background.rgba }});
     {% if section.settings.actions_display_style == 'text' %}
       --header-actions-font-size: {{ section.settings.actions_font_size | default: '1rem' }};
@@ -393,36 +399,6 @@
       {{ navigation_bar }}
     </div>
   {% endif %}
-
-  {% if section.settings.show_custom_search %}
-    <div class="header__row header__row--search color-{{ section.settings.color_scheme_bottom }}" style="--search-bar-bg: {{ section.settings.search_bar_bg }}; --search-bar-border: {{ section.settings.search_bar_border }}; --search-btn-bg: {{ section.settings.search_btn_bg }}; --search-btn-color: {{ section.settings.search_btn_color }};">
-      <div class="header__columns spacing-style">
-        <form
-          action="{{ routes.search_url }}"
-          method="get"
-          class="header-search-bar"
-          role="search"
-        >
-          <input type="hidden" name="type" value="product">
-          <input
-            type="search"
-            name="q"
-            placeholder="{{ section.settings.search_placeholder | default: 'Buscar productos...' }}"
-            class="header-search-bar__input"
-            aria-label="{{ section.settings.search_placeholder | default: 'Buscar productos' }}"
-            autocomplete="off"
-          >
-          <button type="submit" class="header-search-bar__btn">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-              <path d="M7 13A6 6 0 1 0 7 1a6 6 0 0 0 0 12ZM14 14l-3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-            </svg>
-            <span>{{ section.settings.search_button_label | default: 'Buscar' }}</span>
-          </button>
-        </form>
-      </div>
-    </div>
-  {% endif %}
-
 </header-component>
 
 <script
@@ -1389,49 +1365,56 @@
     },
     {
       "type": "header",
-      "content": "Barra de búsqueda expandida"
+      "content": "Barra de búsqueda inline"
     },
     {
-      "type": "checkbox",
-      "id": "show_custom_search",
-      "label": "Mostrar barra de búsqueda",
-      "default": false
+      "type": "range",
+      "id": "al_search_radius",
+      "label": "Radio de bordes",
+      "min": 0,
+      "max": 40,
+      "step": 1,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "al_search_width",
+      "label": "Anchura de la barra (px)",
+      "min": 200,
+      "max": 600,
+      "step": 10,
+      "default": 340
     },
     {
       "type": "text",
-      "id": "search_placeholder",
-      "label": "Placeholder del buscador",
-      "default": "Buscar productos..."
-    },
-    {
-      "type": "text",
-      "id": "search_button_label",
-      "label": "Texto del botón buscar",
-      "default": "Buscar"
+      "id": "al_search_placeholder",
+      "label": "Placeholder",
+      "default": "¿Qué estás buscando?"
     },
     {
       "type": "color",
-      "id": "search_bar_bg",
-      "label": "Fondo del input",
+      "id": "al_search_bg",
+      "label": "Color de fondo",
       "default": "#FFFFFF"
     },
     {
       "type": "color",
-      "id": "search_bar_border",
+      "id": "al_search_border",
       "label": "Color del borde",
       "default": "#E5E0D8"
     },
     {
       "type": "color",
-      "id": "search_btn_bg",
-      "label": "Fondo del botón",
-      "default": "#C8A96E"
+      "id": "al_search_icon",
+      "label": "Color del icono lupa",
+      "default": "#1A1A1A"
     },
     {
       "type": "color",
-      "id": "search_btn_color",
-      "label": "Texto / icono del botón",
-      "default": "#FFFFFF"
+      "id": "al_search_focus",
+      "label": "Color al enfocar",
+      "default": "#C8A96E"
     },
     {
       "type": "header",
