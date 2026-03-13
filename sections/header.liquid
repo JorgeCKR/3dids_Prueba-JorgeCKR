@@ -92,7 +92,7 @@
     endif
   endif
   capture search
-    render 'search', style: search_style, class: search_class, display_style: section.settings.actions_display_style, placeholder: section.settings.al_search_placeholder
+    render 'search', style: search_style, class: search_class, display_style: section.settings.actions_display_style
   endcapture
 
   # Skip drawer search under specific conditions:
@@ -106,7 +106,7 @@
   if section.settings.search_row == 'bottom' or search_style != 'none' and skip_drawer_search == false
     # Mobile search duplicate for when search is not in the right order for mobile layout
     capture drawer_search
-      render 'search', class: 'search-action--hidden-on-menu', style: search_style, display_style: section.settings.actions_display_style, placeholder: section.settings.al_search_placeholder
+      render 'search', class: 'search-action--hidden-on-menu', style: search_style, display_style: section.settings.actions_display_style
     endcapture
   endif
 
@@ -309,12 +309,6 @@
   {% endif %}
   style="
     --color-scheme-top-row: rgba({{ section.settings.color_scheme_top.settings.background.rgba }});
-    --search-inline-border-radius: {{ section.settings.al_search_radius }}px;
-    --search-inline-border-color: {{ section.settings.al_search_border }};
-    --search-inline-bg: {{ section.settings.al_search_bg }};
-    --search-inline-icon-color: {{ section.settings.al_search_icon }};
-    --search-inline-focus-color: {{ section.settings.al_search_focus }};
-    --search-inline-width: {{ section.settings.al_search_width }}px;
     --color-scheme-bottom-row: rgba({{ section.settings.color_scheme_bottom.settings.background.rgba }});
     {% if section.settings.actions_display_style == 'text' %}
       --header-actions-font-size: {{ section.settings.actions_font_size | default: '1rem' }};
@@ -1365,59 +1359,6 @@
     },
     {
       "type": "header",
-      "content": "Barra de búsqueda inline"
-    },
-    {
-      "type": "range",
-      "id": "al_search_radius",
-      "label": "Radio de bordes",
-      "min": 0,
-      "max": 40,
-      "step": 1,
-      "unit": "px",
-      "default": 20
-    },
-    {
-      "type": "range",
-      "id": "al_search_width",
-      "label": "Anchura de la barra (px)",
-      "min": 200,
-      "max": 600,
-      "step": 10,
-      "default": 340
-    },
-    {
-      "type": "text",
-      "id": "al_search_placeholder",
-      "label": "Placeholder",
-      "default": "¿Qué estás buscando?"
-    },
-    {
-      "type": "color",
-      "id": "al_search_bg",
-      "label": "Color de fondo",
-      "default": "#FFFFFF"
-    },
-    {
-      "type": "color",
-      "id": "al_search_border",
-      "label": "Color del borde",
-      "default": "#E5E0D8"
-    },
-    {
-      "type": "color",
-      "id": "al_search_icon",
-      "label": "Color del icono lupa",
-      "default": "#1A1A1A"
-    },
-    {
-      "type": "color",
-      "id": "al_search_focus",
-      "label": "Color al enfocar",
-      "default": "#C8A96E"
-    },
-    {
-      "type": "header",
       "content": "t:content.appearance"
     },
     {
@@ -1705,3 +1646,4 @@
   "presets": []
 }
 {% endschema %}
+

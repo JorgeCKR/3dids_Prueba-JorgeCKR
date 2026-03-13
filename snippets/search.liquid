@@ -1,62 +1,32 @@
 {%- doc -%}
-  Renders the search action button or inline search bar.
+  Renders the search action button.
 
   @param {string} [style] - The style of the search action.
   @param {string} [class] - Additional classes for the search action.
   @param {string} [display_style] - The display style ('icon' or 'text').
-  @param {string} [placeholder] - Placeholder text for the inline search input.
+
+  @example
+  {% render 'search', style: 'default', class: 'custom-class', display_style: 'icon' %}
 {%- enddoc -%}
 
 {% unless style == 'none' %}
   <search-button
     class="search-action{% if display_style == 'text' %} search-action--text{% endif %}{% if class != blank %} {{ class | strip }}{% endif %}"
   >
-
-    <form
-      action="{{ routes.search_url }}"
-      method="get"
-      class="search-action__inline-bar desktop:flex mobile:hidden"
-      role="search"
-      aria-label="{{ 'content.search_input_label' | t }}"
-    >
-      <input type="hidden" name="type" value="product">
-
-      <button
-        type="submit"
-        class="search-action__inline-submit button-unstyled"
-        aria-label="{{ 'content.search_input_label' | t }}"
-      >
-        <span class="svg-wrapper">
-          {{ 'icon-search.svg' | inline_asset_content }}
-        </span>
-      </button>
-
-      <input
-        type="search"
-        name="q"
-        class="search-action__inline-input"
-        placeholder="{{ placeholder | default: '¿Qué estás buscando?' }}"
-        aria-label="{{ 'content.search_input_label' | t }}"
-        autocomplete="off"
-        enterkeyhint="search"
-      >
-
-    </form>
-
     <button
       on:click="#search-modal/showDialog"
-      class="button-unstyled header-actions__action mobile:flex desktop:hidden{% if display_style == 'text' %} header-actions__text-style{% endif %}"
+      class="button-unstyled header-actions__action{% if display_style == 'text' %} header-actions__text-style{% endif %}"
       aria-label="{{ 'content.search_input_label' | t }}"
       aria-haspopup="dialog"
     >
       <span class="{% if display_style == 'icon' %}hidden{% else %}mobile:hidden{% endif %}">
         {{ 'content.search' | t }}
       </span>
+
       <span class="svg-wrapper {% if display_style != 'icon' %}desktop:hidden{% endif %}">
         {{ 'icon-search.svg' | inline_asset_content }}
       </span>
     </button>
-
   </search-button>
 {% endunless %}
 
@@ -64,82 +34,24 @@
   .search-action {
     --search-border-radius: var(--style-border-radius-inputs);
     --search-border-width: var(--style-border-width-inputs);
+
     display: flex;
   }
 
-  .search-action__inline-bar {
-    align-items: center;
-    border: 1px solid var(--search-inline-border-color, var(--color-border));
-    border-radius: var(--search-inline-border-radius, var(--style-border-radius-inputs));
-    background: var(--search-inline-bg, var(--color-background));
-    overflow: hidden;
-    width: var(--search-inline-width, 340px);
-    transition: border-color 0.2s ease, box-shadow 0.2s ease;
-  }
-
-  .search-action__inline-bar:focus-within {
-    border-color: var(--search-inline-focus-color, var(--color-foreground));
-    box-shadow: 0 0 0 1px var(--search-inline-focus-color, var(--color-foreground));
-  }
-
-  .search-action__inline-submit {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 9px 10px 9px 14px;
-    color: var(--search-inline-icon-color, var(--color-foreground));
-    background: transparent;
-    flex-shrink: 0;
-    cursor: pointer;
-    transition: opacity 0.2s ease;
-  }
-
-  .search-action__inline-submit:hover {
-    opacity: 0.6;
-  }
-
-  .search-action__inline-input {
-    flex: 1;
-    border: none;
-    outline: none;
-    background: transparent;
-    padding: 9px 14px 9px 4px;
-    font-size: 14px;
-    color: var(--color-foreground);
-    min-width: 0;
-  }
-
-  .search-action__inline-input::placeholder {
-    color: var(--color-foreground);
-    opacity: 0.45;
-  }
-
-  .search-action__inline-input::-webkit-search-cancel-button {
-    display: none;
-  }
-
   @media screen and (max-width: 749px) {
-    .search-action__inline-bar { display: none !important; }
-    .mobile\:flex { display: flex !important; }
-    .desktop\:hidden { display: flex !important; }
-    .mobile\:hidden { display: none !important; }
-    .desktop\:flex { display: none !important; }
+    .search-action--hidden-on-drawer {
+      display: none;
+    }
   }
 
   @media screen and (min-width: 750px) {
-    .desktop\:flex { display: flex !important; }
-    .mobile\:hidden { display: none !important; }
-    .mobile\:flex { display: none !important; }
-    .desktop\:hidden { display: none !important; }
-  }
+    [data-menu-style='drawer'] .search-action--hidden-on-drawer {
+      display: none;
+    }
 
-  @media screen and (max-width: 749px) {
-    .search-action--hidden-on-drawer { display: none; }
-  }
-
-  @media screen and (min-width: 750px) {
-    [data-menu-style='drawer'] .search-action--hidden-on-drawer { display: none; }
-    [data-menu-style='menu'] .search-action--hidden-on-menu { display: none; }
+    [data-menu-style='menu'] .search-action--hidden-on-menu {
+      display: none;
+    }
   }
 
   [data-menu-style='menu'] .header__column--left .search-action {
@@ -155,9 +67,15 @@
   }
 
   @media screen and (min-width: 750px) {
-    .header__column--right .search-action--text { margin-inline: 0; }
-    [data-menu-style='menu'] .header__column--left .search-action--text { margin-inline: 0; }
+    .header__column--right .search-action--text {
+      margin-inline: 0;
+    }
+
+    [data-menu-style='menu'] .header__column--left .search-action--text {
+      margin-inline: 0;
+    }
   }
 {% endstylesheet %}
+
 
 
