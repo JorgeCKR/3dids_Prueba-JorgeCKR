@@ -5009,7 +5009,7 @@ product-recommendations:has([data-has-recommendations='false']) {
   display:inline-flex;
   align-items:center;
   gap:10px;
-  background:#5a5a5a;
+  background:#555555;
   color:#ffffff;
   padding:12px 18px;
   border-radius:6px;
