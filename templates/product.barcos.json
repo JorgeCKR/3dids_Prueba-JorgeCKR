@@ -550,33 +550,17 @@
                   },
                   "blocks": {}
                 },
-                "button_tDPp4m": {
-                  "type": "button",
-                  "name": "t:names.button",
-                  "settings": {
-                    "label": "Hacer una pregunta",
-                    "link": "shopify://collections/all",
-                    "open_in_new_tab": false,
-                    "style_class": "button",
-                    "width": "fit-content",
-                    "custom_width": 100,
-                    "width_mobile": "fit-content",
-                    "custom_width_mobile": 100
-                  },
-                  "blocks": {}
-                },
                 "custom_liquid_6XfykY": {
                   "type": "custom-liquid",
                   "name": "t:names.custom_liquid",
                   "settings": {
-                    "custom_liquid": "<a href=\"#reviews\" class=\"review-button\">\n  <span class=\"review-icon\">\n    ❓\n  </span>\n  Hacer una pregunta\n</a>"
+                    "custom_liquid": "<a href=\"#preguntas\" class=\"ask-question-btn\">\n  <span class=\"ask-icon\">?</span>\n  Hacer una pregunta\n</a>"
                   },
                   "blocks": {}
                 }
               },
               "block_order": [
                 "custom_liquid_Te6qmP",
-                "button_tDPp4m",
                 "custom_liquid_6XfykY"
               ]
             },
