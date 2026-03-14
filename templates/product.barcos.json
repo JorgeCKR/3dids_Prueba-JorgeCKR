@@ -504,7 +504,7 @@
             },
             "group_iKq9nf": {
               "type": "group",
-              "name": "t:names.group",
+              "name": "Reseña y pregunta",
               "settings": {
                 "content_direction": "row",
                 "vertical_on_mobile": true,
