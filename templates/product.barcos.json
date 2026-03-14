@@ -277,7 +277,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>3 plazos sin intereses (0% TAE) con Klarna <a href=\"https://artesanialatina.net/es/1296-micro-perfiladoras-micro-shapers-b-maqueta-miniaturas.html#:~:text=3%20plazos%20sin,M%C3%A1s%20informaci%C3%B3n\">Más información</a></p>",
+                    "text": "<p>3 plazos sin intereses (0% TAE) con Klarna Más información</p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
