@@ -418,25 +418,20 @@
               },
               "blocks": {}
             },
-            "text_k4KRNN": {
-              "type": "text",
-              "name": "t:names.description",
+            "menu_c9bmYM": {
+              "type": "menu",
+              "name": "t:names.menu",
               "settings": {
-                "text": "<p><a href=\"https://artesanialatina.net/es/contacto\" title=\"Contáctenos\">Contacto</a><br/><a href=\"https://artesanialatina.net/es/p/6-como-comprar\" title=\"Si es nuevo cliente, tiene dos opciones para comprar: una, selecciones los productos que desea\">Cómo Comprar</a><br/><a href=\"https://artesanialatina.net/es/p/8-faqs\">FAQs</a><br/><a href=\"https://artesanialatina.net/es/p/15-solicitud-de-piezas\" title=\"para solicitar piezas, haga click aquí para acceder al formulario y seleccione la opción &quot;SOLICITUD DE PIEZAS&quot; o envíe un email a web@artesanialatina.net\">Solicitud de Piezas</a><br/><a href=\"https://artesanialatina.net/es/p/20-instrucciones\">Instrucciones antiguas</a><br/><a href=\"https://online.fliphtml5.com/acphh/nbfb/\">HMS Victory - Trafalgar 1805</a><br/><a href=\"https://online.fliphtml5.com/acphh/eybu/#p=1\">HMS Surprise</a><br/><a href=\"https://online.fliphtml5.com/acphh/dufe/#p=1\">Stage Coach</a><br/><a href=\"https://online.fliphtml5.com/acphh/bpgy/#p=1\">Catálogo 2026</a></p>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
+                "menu": "footer",
+                "heading": "",
+                "menu_spacing": 3,
+                "show_as_accordion": false,
+                "accordion_icon": "caret",
+                "accordion_dividers": false,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "heading_preset": "h3",
+                "link_preset": "paragraph",
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
@@ -447,7 +442,7 @@
           },
           "block_order": [
             "text_wn8MdW",
-            "text_k4KRNN"
+            "menu_c9bmYM"
           ]
         },
         "group_VcYpUQ": {
