@@ -158,7 +158,7 @@
               "type": "custom-liquid",
               "name": "t:names.custom_liquid",
               "settings": {
-                "custom_liquid": "<div class=\"badge-iniciacion\">\n  <span class=\"badge-dot\"></span>\n  <span class=\"badge-text\">Iniciación</span>\n</div>"
+                "custom_liquid": ""
               },
               "blocks": {}
             },
