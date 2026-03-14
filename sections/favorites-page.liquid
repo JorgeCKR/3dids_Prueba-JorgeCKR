@@ -1,0 +1,34 @@
+<section class="favorites-page container">
+
+  {% if customer %}
+
+    <h1 class="favorites-title">
+      Mi lista de deseos
+    </h1>
+
+    <div id="favorites-grid" class="favorites-grid">
+      <!-- aquí aparecerán los productos favoritos -->
+    </div>
+
+  {% else %}
+
+    <div class="favorites-login-required">
+
+      <h2>Debes iniciar sesión para ver tu lista de deseos</h2>
+
+      <a href="/account/login" class="button button--primary">
+        Iniciar sesión
+      </a>
+
+    </div>
+
+  {% endif %}
+
+</section>
+
+{% schema %}
+{
+  "name": "Favorites page",
+  "settings": []
+}
+{% endschema %}
