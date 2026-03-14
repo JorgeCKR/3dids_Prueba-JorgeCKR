@@ -4955,6 +4955,7 @@ product-recommendations:has([data-has-recommendations='false']) {
   transform: scale(1.06);
 }
 
+/* Categoría iniciado dentro de tarjeta de compra*/
 .badge-iniciacion{
   display:inline-flex;
   align-items:center;
@@ -4979,4 +4980,27 @@ product-recommendations:has([data-has-recommendations='false']) {
 
 .badge-text{
   line-height:1;
+}
+
+/* CSS Botón escribe tu reseña*/
+.review-button{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  background:#3f4a97;
+  color:#fff;
+  padding:12px 18px;
+  border-radius:6px;
+  font-weight:600;
+  text-decoration:none;
+  font-size:16px;
+  transition:0.2s ease;
+}
+
+.review-button:hover{
+  background:#343e82;
+}
+
+.review-icon{
+  font-size:16px;
 }
