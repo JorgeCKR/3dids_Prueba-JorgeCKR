@@ -672,24 +672,20 @@
     "section_n3Hizk": {
       "type": "section",
       "blocks": {
-        "text_tLrDfx": {
-          "type": "text",
+        "menu_aVhh8d": {
+          "type": "menu",
+          "name": "t:names.menu",
           "settings": {
-            "text": "<p><a href=\"https://www.instagram.com/artesanialatina_oficial/\" target=\"_blank\">Instagram<br/></a><a href=\"https://www.facebook.com/ArtesaniaLatina.net\">Facebook</a></p>",
-            "width": "100%",
-            "max_width": "narrow",
-            "alignment": "center",
-            "type_preset": "custom",
-            "font": "var(--font-body--family)",
-            "font_size": "0.875rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
+            "menu": "redes-sociales",
+            "heading": "",
+            "menu_spacing": 0,
+            "show_as_accordion": false,
+            "accordion_icon": "caret",
+            "accordion_dividers": false,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "heading_preset": "",
+            "link_preset": "paragraph",
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
@@ -699,7 +695,7 @@
         }
       },
       "block_order": [
-        "text_tLrDfx"
+        "menu_aVhh8d"
       ],
       "name": "t:names.pull_quote",
       "settings": {
