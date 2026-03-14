@@ -14,6 +14,7 @@
       "blocks": {
         "ai_gen_block_86d8dab_XCyezy": {
           "type": "ai_gen_block_86d8dab",
+          "disabled": true,
           "settings": {
             "title": "Despierta alconstructor que llevas dentro",
             "subtitle": "Explora nuestra amplia colección de barcosy aviones para construir",
