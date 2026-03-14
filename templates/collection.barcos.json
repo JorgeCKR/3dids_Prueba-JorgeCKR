@@ -154,6 +154,14 @@
               },
               "blocks": {}
             },
+            "custom_liquid_iqyHzA": {
+              "type": "custom-liquid",
+              "name": "t:names.custom_liquid",
+              "settings": {
+                "custom_liquid": "{% if product.tags contains \"iniciacion\" %}\n  <div class=\"badge-iniciacion\">\n    <span class=\"badge-dot\"></span>\n    <span class=\"badge-text\">Iniciación</span>\n  </div>\n{% endif %}"
+              },
+              "blocks": {}
+            },
             "card-gallery": {
               "type": "_product-card-gallery",
               "settings": {
@@ -257,6 +265,7 @@
           },
           "block_order": [
             "review_3EPxmq",
+            "custom_liquid_iqyHzA",
             "card-gallery",
             "buy_buttons_NQkdWE",
             "product_title_4nY4eT",
