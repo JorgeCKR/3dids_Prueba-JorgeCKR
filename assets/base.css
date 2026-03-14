@@ -5027,7 +5027,7 @@ product-recommendations:has([data-has-recommendations='false']) {
   width:20px;
   height:20px;
   border-radius:50%;
-  background:#7a7a7a;
+  background:#555555;
   display:flex;
   align-items:center;
   justify-content:center;
