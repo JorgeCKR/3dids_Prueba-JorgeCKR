@@ -542,18 +542,11 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "button_n6Y4QG": {
-                  "type": "button",
-                  "name": "t:names.button",
+                "custom_liquid_Te6qmP": {
+                  "type": "custom-liquid",
+                  "name": "t:names.custom_liquid",
                   "settings": {
-                    "label": "Escribe tu reseña",
-                    "link": "shopify://collections/all",
-                    "open_in_new_tab": false,
-                    "style_class": "button",
-                    "width": "custom",
-                    "custom_width": 49,
-                    "width_mobile": "fit-content",
-                    "custom_width_mobile": 100
+                    "custom_liquid": "<a href=\"#reviews\" class=\"review-button\">\n  <span class=\"review-icon\">\n    ✏️\n  </span>\n  Escribe tu reseña\n</a>"
                   },
                   "blocks": {}
                 },
@@ -571,11 +564,20 @@
                     "custom_width_mobile": 100
                   },
                   "blocks": {}
+                },
+                "custom_liquid_6XfykY": {
+                  "type": "custom-liquid",
+                  "name": "t:names.custom_liquid",
+                  "settings": {
+                    "custom_liquid": "<a href=\"#reviews\" class=\"review-button\">\n  <span class=\"review-icon\">\n    ❓\n  </span>\n  Hacer una pregunta\n</a>"
+                  },
+                  "blocks": {}
                 }
               },
               "block_order": [
-                "button_n6Y4QG",
-                "button_tDPp4m"
+                "custom_liquid_Te6qmP",
+                "button_tDPp4m",
+                "custom_liquid_6XfykY"
               ]
             },
             "text_aEtTtq": {
