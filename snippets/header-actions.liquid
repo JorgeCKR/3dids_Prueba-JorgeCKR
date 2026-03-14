@@ -99,6 +99,16 @@
     </div>
   {% endif %}
 
+  <a
+    href="/pages/favoritos"
+    class="header-actions__action button-unstyled"
+    aria-label="Favoritos"
+  >
+    <span class="svg-wrapper">
+      {{ 'icon-heart.svg' | inline_asset_content }}
+    </span>
+  </a>
+
   {% if settings.cart_type == 'drawer' and template.name != 'cart' %}
     <script
       src="{{ 'cart-drawer.js' | asset_url }}"
