@@ -5014,7 +5014,7 @@ product-recommendations:has([data-has-recommendations='false']) {
   padding:12px 18px;
   border-radius:6px;
   font-size:16px;
-  font-weight:600;
+  font-weight:400;
   text-decoration:none;
   transition:0.2s ease;
 }
