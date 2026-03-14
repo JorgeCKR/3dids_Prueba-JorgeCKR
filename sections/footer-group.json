@@ -511,25 +511,20 @@
               },
               "blocks": {}
             },
-            "text_XWXVqt": {
-              "type": "text",
-              "name": "t:names.description",
+            "menu_9YjLK3": {
+              "type": "menu",
+              "name": "t:names.menu",
               "settings": {
-                "text": "<p><a href=\"https://artesanialatina.net/es/p/7-sobre-nosotros\" title=\"Artesanía Latina es una marca con 50 años de historia especializada en la elaboración de maquetas en kit a escalas en madera y metal.\">Sobre Nosotros</a><a href=\"https://artesanialatina.net/es/p/2-precios-transportes\" title=\"Encuenstra aquí información sobre los gastos de envío en Artesanía Latina. Para pedidos fuera de la Unión Europea (EU), gastos de aduana en destino correrán a cuenta del cliente.\"><br/>Gastos de envío</a><br/><a href=\"https://artesanialatina.net/es/p/5-pago-seguro\" title=\"Ofrecemos pago seguro SSL. Utilice Visa / Mastercard / Paypal. Infórmese sin compromiso sobre nuestros métodos de pago.\">Pago seguro</a><br/><a href=\"https://artesanialatina.net/es/p/18-politica-de-privacidad-y-cookies\" title=\"Una cookie es una pequeña información enviada por un sitio web y almacenada en el navegador del usuario, de manera que el sitio web puede consultar la actividad previa del usuario.\">Política de Privacidad y Cookies</a><br/><a href=\"https://artesanialatina.net/es/p/9-envios-y-devoluciones\" title=\"IMPORTANTE: Para pedidos fuera de la Unión Europea (UE) si hubiera gastos de aduna/aranceles en destino estos correrán siempre a cuenta del comprador / cliente.\">Devoluciones</a><br/><a href=\"https://artesanialatina.net/es/p/13-condiciones-generales\">Condiciones Generales</a><br/><a href=\"https://artesanialatina.net/blog\">Blog</a></p>",
-                "width": "100%",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
+                "menu": "informci-n",
+                "heading": "",
+                "menu_spacing": 3,
+                "show_as_accordion": false,
+                "accordion_icon": "caret",
+                "accordion_dividers": false,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "heading_preset": "h3",
+                "link_preset": "paragraph",
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
@@ -540,7 +535,7 @@
           },
           "block_order": [
             "text_EDdTBA",
-            "text_XWXVqt"
+            "menu_9YjLK3"
           ]
         },
         "group_LXVpji": {
