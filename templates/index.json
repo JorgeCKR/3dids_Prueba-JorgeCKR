@@ -2778,7 +2778,7 @@
                   "type": "custom-liquid",
                   "name": "t:names.custom_liquid",
                   "settings": {
-                    "custom_liquid": "<div class=\"review-card\">\n\n  <div class=\"avatar avatar-blue\">E</div>\n\n  <div class=\"review-name\">EMMANUEL DUVAL</div>\n\n  <div class=\"review-time\">2 mese atrás</div>\n\n  <div class=\"review-stars\">★★★★☆</div>\n\n  <div class=\"review-title\">\n    Splendide fabuleux\n  </div>\n\n  <div class=\"review-text\">\n    C'est mon premier coffret de chez artesania latina, est bien je peux vous dire que bravo. Effectivement j'étais impressionné par la qualité.\n  </div>\n\n  <div class=\"review-product\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-image_large.png\" alt=\"product\">\n    <span>Fragata Hermione La Fayette 1:89. Maqueta de Barco en Madera</span>\n  </div>\n\n</div>\n\n\n<style>\n\n.review-card{\n  max-width:420px;\n  margin:auto;\n  border:1px solid #e6e6e6;\n  border-radius:10px;\n  padding:35px 25px;\n  text-align:center;\n  font-family:Arial, sans-serif;\n  background:white;\n}\n\n.avatar{\n  width:70px;\n  height:70px;\n  color:white;\n  font-size:30px;\n  font-weight:bold;\n  border-radius:50%;\n  display:flex;\n  align-items:center;\n  justify-content:center;\n  margin:-55px auto 15px auto;\n}\n\n.avatar-blue{\n  background:#5f7f9f;\n}\n\n.review-name{\n  font-weight:700;\n  font-size:20px;\n  margin-bottom:10px;\n}\n\n.review-time{\n  color:#888;\n  font-size:14px;\n  margin-bottom:10px;\n}\n\n.review-stars{\n  color:#f59e0b;\n  font-size:22px;\n  margin:8px 0;\n}\n\n.review-title{\n  font-size:22px;\n  font-weight:700;\n  margin:10px 0;\n  color:#444;\n}\n\n.review-text{\n  color:#4054b2;\n  font-size:17px;\n  line-height:1.5;\n  margin-bottom:20px;\n}\n\n.review-product{\n  display:flex;\n  align-items:center;\n  justify-content:center;\n  gap:10px;\n}\n\n.review-product img{\n  width:55px;\n  border-radius:4px;\n}\n\n.review-product span{\n  color:#1ea7c6;\n  font-size:15px;\n}\n\n</style>"
+                    "custom_liquid": "<div class=\"review-card\">\n\n  <div class=\"avatar avatar-blue\">E</div>\n\n  <div class=\"review-name\">EMMANUEL DUVAL</div>\n\n  <div class=\"review-time\">2 mese atrás</div>\n\n  <div class=\"review-stars\">★★★★☆</div>\n\n  <div class=\"review-title\">\n    Splendide fabuleux\n  </div>\n\n  <div class=\"review-text\">\n    C'est mon premier coffret de chez artesania latina, est bien je peux vous dire que bravo. Effectivement j'étais impressionné par la qualité.\n  </div>\n\n  <div class=\"review-product\">\n  <img src=\"https://cdn.shopify.com/s/files/1/1056/6202/1970/files/fragata-hermione-la-fayette-189-maqueta-de-barco-en-madera.jpg?v=1773599466\" alt=\"Fragata Hermione\">\n  <span>Fragata Hermione La Fayette 1:89. Maqueta de Barco en Madera</span>\n</div>\n\n\n<style>\n\n.review-card{\n  max-width:420px;\n  margin:auto;\n  border:1px solid #e6e6e6;\n  border-radius:10px;\n  padding:35px 25px;\n  text-align:center;\n  font-family:Arial, sans-serif;\n  background:white;\n}\n\n.avatar{\n  width:70px;\n  height:70px;\n  color:white;\n  font-size:30px;\n  font-weight:bold;\n  border-radius:50%;\n  display:flex;\n  align-items:center;\n  justify-content:center;\n  margin:-55px auto 15px auto;\n}\n\n.avatar-blue{\n  background:#5f7f9f;\n}\n\n.review-name{\n  font-weight:700;\n  font-size:20px;\n  margin-bottom:10px;\n}\n\n.review-time{\n  color:#888;\n  font-size:14px;\n  margin-bottom:10px;\n}\n\n.review-stars{\n  color:#f59e0b;\n  font-size:22px;\n  margin:8px 0;\n}\n\n.review-title{\n  font-size:22px;\n  font-weight:700;\n  margin:10px 0;\n  color:#444;\n}\n\n.review-text{\n  color:#4054b2;\n  font-size:17px;\n  line-height:1.5;\n  margin-bottom:20px;\n}\n\n.review-product{\n  display:flex;\n  align-items:center;\n  justify-content:center;\n  gap:10px;\n}\n\n.review-product img{\n  width:55px;\n  border-radius:4px;\n}\n\n.review-product span{\n  color:#1ea7c6;\n  font-size:15px;\n}\n\n</style>"
                   },
                   "blocks": {}
                 }
@@ -2814,87 +2814,7 @@
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
               },
-              "blocks": {
-                "image_Kg77Gb": {
-                  "type": "image",
-                  "name": "t:names.image",
-                  "settings": {
-                    "link": "",
-                    "image_ratio": "adapt",
-                    "width": "fill",
-                    "custom_width": 100,
-                    "width_mobile": "fill",
-                    "custom_width_mobile": 100,
-                    "height": "fit",
-                    "border": "none",
-                    "border_width": 1,
-                    "border_opacity": 100,
-                    "border_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                },
-                "text_qhxBqz": {
-                  "type": "text",
-                  "name": "t:names.heading",
-                  "settings": {
-                    "text": "<h2>Calidad que se siente</h2>",
-                    "width": "fit-content",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "h5",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                },
-                "text_kbH8MN": {
-                  "type": "text",
-                  "name": "t:names.text",
-                  "settings": {
-                    "text": "<p>Materiales auténticos, sin concesiones </p>",
-                    "width": "fit-content",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "image_Kg77Gb",
-                "text_qhxBqz",
-                "text_kbH8MN"
-              ]
+              "blocks": {}
             }
           },
           "block_order": [
