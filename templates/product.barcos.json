@@ -616,10 +616,19 @@
                         "padding-inline-end": 0
                       },
                       "blocks": {}
+                    },
+                    "custom_liquid_MaLBgR": {
+                      "type": "custom-liquid",
+                      "name": "t:names.custom_liquid",
+                      "settings": {
+                        "custom_liquid": ""
+                      },
+                      "blocks": {}
                     }
                   },
                   "block_order": [
-                    "text_6JEAnP"
+                    "text_6JEAnP",
+                    "custom_liquid_MaLBgR"
                   ]
                 },
                 "accordion_row_Qi3DQ9": {
