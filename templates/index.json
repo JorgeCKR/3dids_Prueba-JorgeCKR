@@ -2121,14 +2121,6 @@
                   },
                   "blocks": {}
                 },
-                "custom_liquid_qCWWKw": {
-                  "type": "custom-liquid",
-                  "name": "t:names.custom_liquid",
-                  "settings": {
-                    "custom_liquid": "<div class=\"custom-review-card\">\n  \n  <div class=\"review-avatar\">\n    D\n  </div>\n\n  <div class=\"review-content\">\n    <h3 class=\"review-name\">DIDIER GUILLONNEAU</h3>\n\n    <div class=\"review-meta\">\n      <span class=\"verified\">Verified purchase</span><br>\n      <span class=\"time\">2 mese atrás</span>\n    </div>\n\n    <div class=\"review-stars\">\n      ★★★★★\n    </div>\n\n    <h4 class=\"review-title\">\n      ma première commande\n    </h4>\n\n    <p class=\"review-text\">\n      Je suis entièrement satisfait de ma commande. Très bien emballée, un catalogue très appréciable pour visualiser les détails.\n    </p>\n\n    <div class=\"review-product\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-image_large.png\" width=\"60\">\n      <span class=\"product-name\">\n        Tablero de Tilo Contrachapado 900 x 300 x 1,5 mm\n      </span>\n    </div>\n\n  </div>\n\n</div>\n\n<style>\n.custom-review-card{\n  max-width:420px;\n  border:1px solid #e5e5e5;\n  border-radius:10px;\n  padding:25px;\n  text-align:center;\n  font-family:Arial, sans-serif;\n}\n\n.review-avatar{\n  width:60px;\n  height:60px;\n  background:#5c6ac4;\n  color:white;\n  font-weight:bold;\n  font-size:26px;\n  display:flex;\n  align-items:center;\n  justify-content:center;\n  border-radius:50%;\n  margin:0 auto 10px;\n}\n\n.review-name{\n  font-size:18px;\n  margin:5px 0;\n}\n\n.review-meta{\n  font-size:14px;\n  color:#666;\n}\n\n.verified{\n  color:#22c55e;\n  font-weight:600;\n}\n\n.review-stars{\n  color:#f59e0b;\n  font-size:20px;\n  margin:8px 0;\n}\n\n.review-title{\n  font-size:20px;\n  font-weight:bold;\n  margin:10px 0;\n}\n\n.review-text{\n  color:#444;\n  font-size:15px;\n}\n\n.review-product{\n  display:flex;\n  align-items:center;\n  justify-content:center;\n  gap:10px;\n  margin-top:15px;\n}\n\n.review-product img{\n  border-radius:4px;\n}\n</style>"
-                  },
-                  "blocks": {}
-                },
                 "text_Um6wXG": {
                   "type": "text",
                   "name": "t:names.heading",
@@ -2184,7 +2176,6 @@
               },
               "block_order": [
                 "image_m7BgXt",
-                "custom_liquid_qCWWKw",
                 "text_Um6wXG",
                 "text_V8yYpA"
               ]
@@ -2537,6 +2528,570 @@
         "padding-block-start": 48,
         "padding-block-end": 48
       }
+    },
+    "carousel_HaF4QF": {
+      "type": "carousel",
+      "blocks": {
+        "static-header": {
+          "type": "group",
+          "name": "t:names.header",
+          "static": true,
+          "settings": {
+            "content_direction": "row",
+            "vertical_on_mobile": false,
+            "horizontal_alignment": "space-between",
+            "vertical_alignment": "flex-end",
+            "align_baseline": true,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 16,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "text_fJiPhM": {
+              "type": "text",
+              "name": "t:names.header",
+              "settings": {
+                "text": "<p>Descubre un diseño refinado </p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "h3",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_fJiPhM"
+          ]
+        },
+        "static-carousel-content": {
+          "type": "_carousel-content",
+          "name": "t:names.carousel_content",
+          "static": true,
+          "settings": {
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "height": "fit",
+            "position": "top",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "card_wtmGf4": {
+              "type": "_card",
+              "name": "t:names.card",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 12,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "aspect_ratio": "adapt",
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "product_card_yJN9Ka": {
+                  "type": "product-card",
+                  "name": "t:names.product_card",
+                  "settings": {
+                    "product": "marie-jeanne-atunero-1-50-maqueta-de-barco-de-pesca-en-madera",
+                    "product_card_gap": 4,
+                    "inherit_color_scheme": false,
+                    "color_scheme": "",
+                    "width": "fill",
+                    "custom_width": 100,
+                    "width_mobile": "fill",
+                    "custom_width_mobile": 100,
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {
+                    "product_card_gallery_FhQWhH": {
+                      "type": "_product-card-gallery",
+                      "settings": {
+                        "image_ratio": "adapt",
+                        "border": "none",
+                        "border_width": 1,
+                        "border_opacity": 100,
+                        "border_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    },
+                    "product_title_DBdRqa": {
+                      "type": "product-title",
+                      "name": "t:names.product_title",
+                      "settings": {
+                        "width": "fit-content",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "color": "var(--color-foreground)",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 4,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "product_card_gallery_FhQWhH",
+                    "product_title_DBdRqa"
+                  ]
+                },
+                "custom_liquid_XAHNgF": {
+                  "type": "custom-liquid",
+                  "name": "t:names.custom_liquid",
+                  "settings": {
+                    "custom_liquid": "<div class=\"review-card\">\n\n  <div class=\"avatar\">D</div>\n\n  <div class=\"review-name\">DIDIER GUILLONNEAU</div>\n\n  <div class=\"review-verified\">Verified purchase</div>\n  <div class=\"review-time\">2 mese atrás</div>\n\n  <div class=\"review-stars\">★★★★★</div>\n\n  <div class=\"review-title\">\n    ma première commande\n  </div>\n\n  <div class=\"review-text\">\n    Je suis entièrement satisfait de ma commande. Très bien emballée, un catalogue très appréciable pour visualiser les détails.\n  </div>\n\n</div>\n\n\n<style>\n\n.review-card{\n  max-width:420px;\n  margin:auto;\n  border:1px solid #e6e6e6;\n  border-radius:10px;\n  padding:35px 25px;\n  text-align:center;\n  font-family: Arial, sans-serif;\n  background:white;\n}\n\n.avatar{\n  width:70px;\n  height:70px;\n  background:#5b6acb;\n  color:white;\n  font-size:30px;\n  font-weight:bold;\n  border-radius:50%;\n  display:flex;\n  align-items:center;\n  justify-content:center;\n  margin:-55px auto 15px auto;\n}\n\n.review-name{\n  font-weight:700;\n  font-size:18px;\n  margin-bottom:8px;\n}\n\n.review-verified{\n  color:#22c55e;\n  font-size:15px;\n}\n\n.review-time{\n  color:#888;\n  font-size:14px;\n  margin-bottom:10px;\n}\n\n.review-stars{\n  color:#f59e0b;\n  font-size:22px;\n  margin:8px 0;\n}\n\n.review-title{\n  font-size:22px;\n  font-weight:700;\n  margin:10px 0;\n  color:#444;\n}\n\n.review-text{\n  color:#4054b2;\n  font-size:17px;\n  line-height:1.5;\n}\n\n</style>"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "product_card_yJN9Ka",
+                "custom_liquid_XAHNgF"
+              ]
+            },
+            "card_REbJtq": {
+              "type": "_card",
+              "name": "t:names.card",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 12,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "aspect_ratio": "adapt",
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "image_nRjMYb": {
+                  "type": "image",
+                  "name": "t:names.image",
+                  "settings": {
+                    "link": "",
+                    "image_ratio": "adapt",
+                    "width": "fill",
+                    "custom_width": 100,
+                    "width_mobile": "fill",
+                    "custom_width_mobile": 100,
+                    "height": "fit",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "text_MKiWKT": {
+                  "type": "text",
+                  "name": "t:names.heading",
+                  "settings": {
+                    "text": "<p>Estándares sin concesiones </p>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "h5",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "text_w9JyrV": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>Construcción experta y acabado impecable</p>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "image_nRjMYb",
+                "text_MKiWKT",
+                "text_w9JyrV"
+              ]
+            },
+            "card_rGi8AH": {
+              "type": "_card",
+              "name": "t:names.card",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 12,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "aspect_ratio": "adapt",
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "image_BQkNrc": {
+                  "type": "image",
+                  "name": "t:names.image",
+                  "settings": {
+                    "link": "",
+                    "image_ratio": "adapt",
+                    "width": "fill",
+                    "custom_width": 100,
+                    "width_mobile": "fill",
+                    "custom_width_mobile": 100,
+                    "height": "fit",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "text_NRgBXU": {
+                  "type": "text",
+                  "name": "t:names.heading",
+                  "settings": {
+                    "text": "<p>Hecho para durar </p>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "h5",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "text_CUVGtU": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>Piezas que solo mejoran con el tiempo y el uso </p>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "image_BQkNrc",
+                "text_NRgBXU",
+                "text_CUVGtU"
+              ]
+            },
+            "card_P3J9YP": {
+              "type": "_card",
+              "name": "t:names.card",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 12,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "aspect_ratio": "adapt",
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "image_Kg77Gb": {
+                  "type": "image",
+                  "name": "t:names.image",
+                  "settings": {
+                    "link": "",
+                    "image_ratio": "adapt",
+                    "width": "fill",
+                    "custom_width": 100,
+                    "width_mobile": "fill",
+                    "custom_width_mobile": 100,
+                    "height": "fit",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "text_qhxBqz": {
+                  "type": "text",
+                  "name": "t:names.heading",
+                  "settings": {
+                    "text": "<h2>Calidad que se siente</h2>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "h5",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "text_kbH8MN": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>Materiales auténticos, sin concesiones </p>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "image_Kg77Gb",
+                "text_qhxBqz",
+                "text_kbH8MN"
+              ]
+            }
+          },
+          "block_order": [
+            "card_wtmGf4",
+            "card_REbJtq",
+            "card_rGi8AH",
+            "card_P3J9YP"
+          ]
+        }
+      },
+      "name": "t:names.carousel",
+      "settings": {
+        "columns": 3,
+        "mobile_columns": "1",
+        "section_width": "page-width",
+        "columns_gap": 12,
+        "color_scheme": "",
+        "icons_style": "arrow",
+        "icons_shape": "none",
+        "padding-block-start": 48,
+        "padding-block-end": 48
+      }
+    },
+    "custom_liquid_tMMDyb": {
+      "type": "custom-liquid",
+      "name": "t:names.custom_liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"review-card\">\n\n  <div class=\"avatar\">D</div>\n\n  <div class=\"review-name\">DIDIER GUILLONNEAU</div>\n\n  <div class=\"review-verified\">Verified purchase</div>\n  <div class=\"review-time\">2 mese atrás</div>\n\n  <div class=\"review-stars\">★★★★★</div>\n\n  <div class=\"review-title\">\n    ma première commande\n  </div>\n\n  <div class=\"review-text\">\n    Je suis entièrement satisfait de ma commande. Très bien emballée, un catalogue très appréciable pour visualiser les détails.\n  </div>\n\n</div>\n\n\n<style>\n\n.review-card{\n  max-width:420px;\n  margin:auto;\n  border:1px solid #e6e6e6;\n  border-radius:10px;\n  padding:35px 25px;\n  text-align:center;\n  font-family: Arial, sans-serif;\n  background:white;\n}\n\n.avatar{\n  width:70px;\n  height:70px;\n  background:#5b6acb;\n  color:white;\n  font-size:30px;\n  font-weight:bold;\n  border-radius:50%;\n  display:flex;\n  align-items:center;\n  justify-content:center;\n  margin:-55px auto 15px auto;\n}\n\n.review-name{\n  font-weight:700;\n  font-size:18px;\n  margin-bottom:8px;\n}\n\n.review-verified{\n  color:#22c55e;\n  font-size:15px;\n}\n\n.review-time{\n  color:#888;\n  font-size:14px;\n  margin-bottom:10px;\n}\n\n.review-stars{\n  color:#f59e0b;\n  font-size:22px;\n  margin:8px 0;\n}\n\n.review-title{\n  font-size:22px;\n  font-weight:700;\n  margin:10px 0;\n  color:#444;\n}\n\n.review-text{\n  color:#4054b2;\n  font-size:17px;\n  line-height:1.5;\n}\n\n</style>",
+        "color_scheme": "",
+        "section_width": "page-width",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
     }
   },
   "order": [
@@ -2554,6 +3109,8 @@
     "section_hHPUPL",
     "divider_reQ8pP",
     "hero_ymfDDi",
-    "carousel_ewgnG9"
+    "carousel_ewgnG9",
+    "carousel_HaF4QF",
+    "custom_liquid_tMMDyb"
   ]
 }
