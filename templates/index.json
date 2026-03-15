@@ -902,6 +902,14 @@
             "padding-inline-end": 0
           },
           "blocks": {
+            "custom_liquid_xT6eUK": {
+              "type": "custom-liquid",
+              "name": "t:names.custom_liquid",
+              "settings": {
+                "custom_liquid": "<iframe width=\"668\" height=\"332\" src=\"https://www.youtube.com/embed/LiQRUHBoF-k?list=TLGG-xd8sCYGiZoxNTAzMjAyNg\" title=\"Artesanía Latina - El placer de construir desde 1970\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+              },
+              "blocks": {}
+            },
             "spacer_McAFJ7": {
               "type": "spacer",
               "settings": {
@@ -917,6 +925,7 @@
             }
           },
           "block_order": [
+            "custom_liquid_xT6eUK",
             "spacer_McAFJ7"
           ]
         }
