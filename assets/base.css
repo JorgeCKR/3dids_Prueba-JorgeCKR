@@ -5034,3 +5034,18 @@ product-recommendations:has([data-has-recommendations='false']) {
   font-size:14px;
   font-weight:bold;
 }
+/* Boton de favoritos en tarjeta de producto */
+.favorite-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.favorite-button svg {
+  width: 20px;
+  height: 20px;
+}
