@@ -5071,4 +5071,9 @@ product-recommendations:has([data-has-recommendations='false']) {
   cursor:pointer;
   font-size:18px;
 }
+#favorites-grid{
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+}
 
