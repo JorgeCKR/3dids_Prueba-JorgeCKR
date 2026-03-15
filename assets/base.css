@@ -5056,3 +5056,18 @@ product-recommendations:has([data-has-recommendations='false']) {
 .favorite-button.is-favorite svg {
   fill: currentColor;
 }
+
+/* Grid de favoritos  y boton eliminar */
+.favorite-item{
+  position:relative;
+}
+
+.remove-favorite{
+  position:absolute;
+  top:10px;
+  right:10px;
+  background:white;
+  border:none;
+  cursor:pointer;
+  font-size:16px;
+}
