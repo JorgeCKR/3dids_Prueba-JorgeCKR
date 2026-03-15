@@ -10,8 +10,8 @@
 {
   "current": {
     "logo": "shopify://shop_images/logo-arte_2x_7839da3d-737f-425e-b684-6cab97a49d7e.png",
-    "logo_inverse": "shopify://shop_images/logo-arte_2x_1.png",
-    "logo_height": 36,
+    "logo_inverse": "shopify://shop_images/ask-question-btn_displayinline-flex_align-itemscenter_gap10px_background_5a5a5a_color_ffffff_padding12px_18px_border-radius6px_font-size16px_font-weight600_text-decorationnone_transit.png",
+    "logo_height": 73,
     "logo_height_mobile": 28,
     "favicon": "shopify://shop_images/Logo_invertido.png",
     "type_body_font": "poppins_n4",
@@ -61,7 +61,7 @@
     "secondary_button_border_width": 1,
     "button_border_radius_secondary": 100,
     "button_text_case_secondary": "default",
-    "cart_type": "drawer",
+    "cart_type": "page",
     "cart_price_font": "secondary",
     "auto_open_cart_drawer": false,
     "show_cart_note": false,
