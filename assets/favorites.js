@@ -74,17 +74,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
             <div class="product-description">
 
-              <div class="h3 product-title mt-2 fs-10 font-weight-normal">
+              <h3 class="product-title">
 
                 <a href="${product.url}">
                   ${product.title}
                 </a>
 
-                <div class="mt-1">
-                  <span class="product-price font-weight-bold">
-                    ${(product.price / 100).toFixed(2)} €
-                  </span>
-                </div>
+              </h3>
+
+              <div class="price">
+
+                ${(product.price / 100).toFixed(2)} €
 
               </div>
 
