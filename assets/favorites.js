@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
       .then(product => {
 
         const productCard = `
-        <div class="col-md-4 col-lg-4 col-xl-4 col-6 iqitwishlist-product mb-3 favorite-item">
+        <li class="product-grid__item favorite-item">
 
           <div class="iqitwishlist-product-box">
 
@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
           </div>
 
-        </div>
+        </li>
         `;
 
         favoritesGrid.insertAdjacentHTML("beforeend", productCard);
