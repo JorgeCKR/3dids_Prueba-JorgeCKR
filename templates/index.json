@@ -831,7 +831,7 @@
             "button_WpEDFF": {
               "type": "button",
               "settings": {
-                "label": "Descubre Artesanía Latina",
+                "label": "Descubre Artesanía Latina →",
                 "link": "shopify://collections/all",
                 "open_in_new_tab": false,
                 "style_class": "button",
