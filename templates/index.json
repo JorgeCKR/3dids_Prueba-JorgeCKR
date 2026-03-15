@@ -841,6 +841,19 @@
               },
               "blocks": {}
             },
+            "spacer_Ng6Qgb": {
+              "type": "spacer",
+              "settings": {
+                "size": "pixel",
+                "percent_size": 100,
+                "pixel_size": 160,
+                "custom_mobile_size": false,
+                "size_mobile": "percent",
+                "percent_size_mobile": 100,
+                "pixel_size_mobile": 120
+              },
+              "blocks": {}
+            },
             "button_WpEDFF": {
               "type": "button",
               "settings": {
@@ -859,6 +872,7 @@
           "block_order": [
             "spacer_RJEcDF",
             "text_MGcxtG",
+            "spacer_Ng6Qgb",
             "button_WpEDFF"
           ]
         },
@@ -881,8 +895,7 @@
             "custom_height": 65,
             "inherit_color_scheme": false,
             "color_scheme": "scheme-2",
-            "background_media": "video",
-            "video": "shopify://files/videos/YTDown.com_YouTube_Artesania-Latina-El-placer-de-construir-_Media_LiQRUHBoF-k_001_1080p.mp4",
+            "background_media": "none",
             "video_position": "contain",
             "background_image_position": "cover",
             "border": "none",
@@ -971,8 +984,7 @@
             "custom_height": 65,
             "inherit_color_scheme": false,
             "color_scheme": "scheme-2",
-            "background_media": "video",
-            "video": "shopify://files/videos/YTDown.com_YouTube_Artesania-Latina-El-placer-de-construir-_Media_LiQRUHBoF-k_001_1080p.mp4",
+            "background_media": "none",
             "video_position": "contain",
             "background_image_position": "cover",
             "border": "none",
@@ -1017,11 +1029,11 @@
             "vertical_alignment_flex_direction_column": "space-between",
             "gap": 56,
             "width": "custom",
-            "custom_width": 56,
+            "custom_width": 100,
             "width_mobile": "fill",
             "custom_width_mobile": 100,
             "height": "custom",
-            "custom_height": 65,
+            "custom_height": 62,
             "inherit_color_scheme": false,
             "color_scheme": "scheme-2",
             "background_media": "none",
@@ -1075,7 +1087,7 @@
               "settings": {
                 "text": "<p>Artesanía Latina es una marca con más de 50 años de historia especializada en la concepción, fabricación y comercialización de maquetas en kit a escala de madera y metal. Nuestros modelos, están fabricados con materiales de excelente calidad y con maquinaria de última generación para ofrecer una magnífica experiencia de montaje. </p><p>Tanto si ya eres todo un experto modelista como alguien que se pregunta si este hobby es para ti, tenemos el modelo ideal para ti. </p><p>Disponemos además una completa selección de herramientas, accesorios y complementos para llevar a tus maquetas al siguiente nivel </p><p>Si estás buscando un regalo perfecto para ti o tus allegados, tenemos una extensa selección de Ideas para regalar. </p>",
                 "width": "100%",
-                "max_width": "normal",
+                "max_width": "none",
                 "alignment": "left",
                 "type_preset": "rte",
                 "font": "var(--font-body--family)",
@@ -1117,7 +1129,7 @@
         "vertical_alignment_flex_direction_column": "center",
         "gap": 0,
         "section_width": "full-width",
-        "section_height": "full-screen",
+        "section_height": "custom",
         "section_height_custom": 0,
         "color_scheme": "scheme-2",
         "background_media": "none",
