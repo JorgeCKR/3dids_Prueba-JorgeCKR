@@ -9,12 +9,12 @@ document.addEventListener("DOMContentLoaded", function () {
       event.preventDefault();
       event.stopPropagation();
 
-      const productId = this.dataset.productId;
+      const productHandle = this.dataset.productHandle;
 
       let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
 
-      if (!favorites.includes(productId)) {
-        favorites.push(productId);
+      if (!favorites.includes(productHandle)) {
+        favorites.push(productHandle);
       } else {
         favorites = favorites.filter(id => id !== productId);
       }
