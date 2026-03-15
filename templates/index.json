@@ -774,7 +774,7 @@
             "align_baseline": false,
             "horizontal_alignment_flex_direction_column": "flex-start",
             "vertical_alignment_flex_direction_column": "space-between",
-            "gap": 56,
+            "gap": 0,
             "width": "custom",
             "custom_width": 50,
             "width_mobile": "fill",
@@ -798,7 +798,7 @@
             "open_in_new_tab": false,
             "placeholder": "hero-apparel-2",
             "padding-block-start": 0,
-            "padding-block-end": 47,
+            "padding-block-end": 23,
             "padding-inline-start": 41,
             "padding-inline-end": 100
           },
@@ -909,24 +909,10 @@
                 "custom_liquid": "<iframe width=\"668\" height=\"332\" src=\"https://www.youtube.com/embed/LiQRUHBoF-k?list=TLGG-xd8sCYGiZoxNTAzMjAyNg\" title=\"Artesanía Latina - El placer de construir desde 1970\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
               },
               "blocks": {}
-            },
-            "spacer_McAFJ7": {
-              "type": "spacer",
-              "settings": {
-                "size": "pixel",
-                "percent_size": 100,
-                "pixel_size": 16,
-                "custom_mobile_size": false,
-                "size_mobile": "percent",
-                "percent_size_mobile": 100,
-                "pixel_size_mobile": 120
-              },
-              "blocks": {}
             }
           },
           "block_order": [
-            "custom_liquid_xT6eUK",
-            "spacer_McAFJ7"
+            "custom_liquid_xT6eUK"
           ]
         }
       },
@@ -946,8 +932,8 @@
         "gap": 0,
         "section_width": "full-width",
         "section_height": "custom",
-        "section_height_custom": 90,
-        "color_scheme": "",
+        "section_height_custom": 46,
+        "color_scheme": "scheme-2",
         "background_media": "none",
         "video_position": "cover",
         "background_image_position": "cover",
@@ -1010,27 +996,13 @@
               "type": "custom-liquid",
               "name": "t:names.custom_liquid",
               "settings": {
-                "custom_liquid": "<iframe width=\"768\" height=\"432\" src=\"https://www.youtube.com/embed/Lu-GImpTE8k?list=TLGGAppObONA9dIxNTAzMjAyNg\" title=\"Artesania Latina NEW! SOLEIL ROYAL 1/72 scale model\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
-              },
-              "blocks": {}
-            },
-            "spacer_WAfDxr": {
-              "type": "spacer",
-              "settings": {
-                "size": "pixel",
-                "percent_size": 100,
-                "pixel_size": 16,
-                "custom_mobile_size": false,
-                "size_mobile": "percent",
-                "percent_size_mobile": 100,
-                "pixel_size_mobile": 120
+                "custom_liquid": "<iframe width=\"688\" height=\"352\" src=\"https://www.youtube.com/embed/Lu-GImpTE8k?list=TLGGAppObONA9dIxNTAzMjAyNg\" title=\"Artesania Latina NEW! SOLEIL ROYAL 1/72 scale model\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
               },
               "blocks": {}
             }
           },
           "block_order": [
-            "custom_liquid_bkgbgK",
-            "spacer_WAfDxr"
+            "custom_liquid_bkgbgK"
           ]
         },
         "group_XCweKf": {
@@ -1072,19 +1044,6 @@
             "padding-inline-end": 100
           },
           "blocks": {
-            "spacer_mJNUn6": {
-              "type": "spacer",
-              "settings": {
-                "size": "pixel",
-                "percent_size": 100,
-                "pixel_size": 16,
-                "custom_mobile_size": false,
-                "size_mobile": "percent",
-                "percent_size_mobile": 100,
-                "pixel_size_mobile": 120
-              },
-              "blocks": {}
-            },
             "text_k4GBqE": {
               "type": "text",
               "settings": {
@@ -1135,27 +1094,11 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
-            },
-            "button_nRaiD6": {
-              "type": "button",
-              "settings": {
-                "label": "Descubre Artesanía Latina",
-                "link": "shopify://collections/all",
-                "open_in_new_tab": false,
-                "style_class": "button-secondary",
-                "width": "custom",
-                "custom_width": 66,
-                "width_mobile": "fit-content",
-                "custom_width_mobile": 100
-              },
-              "blocks": {}
             }
           },
           "block_order": [
-            "spacer_mJNUn6",
             "text_k4GBqE",
-            "text_GNLqQq",
-            "button_nRaiD6"
+            "text_GNLqQq"
           ]
         }
       },
@@ -1174,9 +1117,9 @@
         "vertical_alignment_flex_direction_column": "center",
         "gap": 0,
         "section_width": "full-width",
-        "section_height": "custom",
-        "section_height_custom": 90,
-        "color_scheme": "",
+        "section_height": "full-screen",
+        "section_height_custom": 0,
+        "color_scheme": "scheme-2",
         "background_media": "none",
         "video_position": "cover",
         "background_image_position": "cover",
