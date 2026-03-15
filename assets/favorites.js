@@ -65,3 +65,15 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 });
+
+const favoritesSaved = JSON.parse(localStorage.getItem("favorites")) || [];
+
+document.querySelectorAll(".favorite-button").forEach(button => {
+
+  const handle = button.dataset.productHandle;
+
+  if (favoritesSaved.includes(handle)) {
+    button.classList.add("is-favorite");
+  }
+
+});
