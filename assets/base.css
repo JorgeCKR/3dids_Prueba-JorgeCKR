@@ -5051,5 +5051,5 @@ product-recommendations:has([data-has-recommendations='false']) {
 }
 
 .favorite-button.is-favorite svg {
-  fill: red;
+  fill: currentColor;
 }
