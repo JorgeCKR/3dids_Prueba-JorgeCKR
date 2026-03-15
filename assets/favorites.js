@@ -49,11 +49,13 @@ document.addEventListener("DOMContentLoaded", function () {
       .then(product => {
 
         const productCard = `
-          <div class="grid__item favorite-item">
-            <a href="${product.url}" class="favorite-product">
+          <div class="favorite-item">
+            <button class="remove-favorite" data-handle="${product.handle}">✕</button>
+
+            <a href="${product.url}">
               <img src="${product.images[0]}" alt="${product.title}">
               <h3>${product.title}</h3>
-              <p class="price">${(product.price / 100).toFixed(2)} €</p>
+              <p>${(product.price / 100).toFixed(2)} €</p>
             </a>
           </div>
         `;
