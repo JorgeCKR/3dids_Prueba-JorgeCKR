@@ -997,6 +997,14 @@
             "padding-inline-end": 0
           },
           "blocks": {
+            "custom_liquid_bkgbgK": {
+              "type": "custom-liquid",
+              "name": "t:names.custom_liquid",
+              "settings": {
+                "custom_liquid": "<iframe width=\"768\" height=\"432\" src=\"https://www.youtube.com/embed/Lu-GImpTE8k?list=TLGGAppObONA9dIxNTAzMjAyNg\" title=\"Artesania Latina NEW! SOLEIL ROYAL 1/72 scale model\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+              },
+              "blocks": {}
+            },
             "spacer_WAfDxr": {
               "type": "spacer",
               "settings": {
@@ -1012,6 +1020,7 @@
             }
           },
           "block_order": [
+            "custom_liquid_bkgbgK",
             "spacer_WAfDxr"
           ]
         },
@@ -1154,7 +1163,7 @@
         "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "flex-start",
         "vertical_alignment_flex_direction_column": "center",
-        "gap": 100,
+        "gap": 0,
         "section_width": "page-width",
         "section_height": "custom",
         "section_height_custom": 90,
