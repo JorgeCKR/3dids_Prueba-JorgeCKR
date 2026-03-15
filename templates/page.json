@@ -6,7 +6,8 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */{
+ */
+{
   "sections": {
     "main": {
       "type": "main-page",
@@ -37,6 +38,32 @@
           },
           "blocks": {}
         },
+        "text_VCjbaT": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p><strong>Sumérgete en el fascinante mundo de la construcción de modelos con nuestra exclusiva colección de kits de barcos de madera. En Artesanía Latina nos enorgullecemos de ofrecer modelos que combinan precisión histórica, detalles intrincados y materiales de la más alta calidad. Cada kit te invita a revivir la historia marítima mientras perfeccionas tus habilidades de modelismo.</strong></p>",
+            "width": "100%",
+            "max_width": "none",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
         "page-content": {
           "type": "page-content",
           "settings": {},
@@ -45,6 +72,7 @@
       },
       "block_order": [
         "heading",
+        "text_VCjbaT",
         "page-content"
       ],
       "settings": {
@@ -52,7 +80,7 @@
         "gap": 32,
         "color_scheme": "",
         "padding-block-start": 40,
-        "padding-block-end": 80
+        "padding-block-end": 0
       }
     }
   },
