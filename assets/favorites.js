@@ -74,13 +74,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
             <div class="product-description">
 
-              <h3 class="product-title">
+              <div class="product-title">
 
                 <a href="${product.url}">
                   ${product.title}
                 </a>
 
-              </h3>
+              </div>
 
               <div class="price">
 
