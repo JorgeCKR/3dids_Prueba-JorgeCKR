@@ -49,15 +49,50 @@ document.addEventListener("DOMContentLoaded", function () {
       .then(product => {
 
         const productCard = `
-          <div class="favorite-item">
-            <button class="remove-favorite" data-handle="${product.handle}">✕</button>
+        <div class="col-md-4 col-lg-4 col-xl-4 col-6 iqitwishlist-product mb-3 favorite-item">
 
-            <a href="${product.url}">
-              <img src="${product.images[0]}" alt="${product.title}">
-              <h3>${product.title}</h3>
-              <p>${(product.price / 100).toFixed(2)} €</p>
-            </a>
+          <div class="iqitwishlist-product-box">
+
+            <div class="thumbnail-container border">
+
+              <button 
+                class="remove-favorite position-absolute"
+                data-handle="${product.handle}"
+              >
+                🗑
+              </button>
+
+              <a href="${product.url}">
+                <img 
+                  src="${product.images[0]}" 
+                  alt="${product.title}" 
+                  class="img-fluid"
+                >
+              </a>
+
+            </div>
+
+            <div class="product-description">
+
+              <div class="h3 product-title mt-2 fs-10 font-weight-normal">
+
+                <a href="${product.url}">
+                  ${product.title}
+                </a>
+
+                <div class="mt-1">
+                  <span class="product-price font-weight-bold">
+                    ${(product.price / 100).toFixed(2)} €
+                  </span>
+                </div>
+
+              </div>
+
+            </div>
+
           </div>
+
+        </div>
         `;
 
         favoritesGrid.insertAdjacentHTML("beforeend", productCard);
