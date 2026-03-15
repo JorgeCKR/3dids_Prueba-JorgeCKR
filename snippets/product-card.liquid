@@ -106,6 +106,16 @@
       {% if block_settings.padding-block-end > 0 %}--zoom-out-padding-block-end: min(var(--padding-xs), {{ block_settings.padding-block-end | times: 0.7}}px);{% endif %}
     "
   >
+    <button
+      class="favorite-button"
+      data-product-id="{{ product.id }}"
+      aria-label="Agregar a favoritos"
+    >
+      <span class="svg-wrapper">
+        {{ 'icon-heart.svg' | inline_asset_content }}
+      </span>
+    </button>
+
     {{ children }}
   </div>
 </product-card>
