@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (!favorites.includes(productHandle)) {
         favorites.push(productHandle);
       } else {
-        favorites = favorites.filter(id => id !== productId);
+        favorites = favorites.filter(id => id !== productHandle);
       }
 
       localStorage.setItem("favorites", JSON.stringify(favorites));
@@ -42,9 +42,9 @@ document.addEventListener("DOMContentLoaded", function () {
     return;
   }
 
-  favorites.forEach(productId => {
+  favorites.forEach(productHandle => {
 
-    fetch(`/products/${productId}.js`)
+    fetch(`/products/${productHandle}.js`)
       .then(response => response.json())
       .then(product => {
 
