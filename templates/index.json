@@ -2746,6 +2746,47 @@
                 "custom_liquid_f7mwqP"
               ]
             },
+            "card_PPMkzp": {
+              "type": "_card",
+              "name": "t:names.card",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 12,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "aspect_ratio": "adapt",
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "padding-block-start": 25,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "custom_liquid_amhmyF": {
+                  "type": "custom-liquid",
+                  "name": "t:names.custom_liquid",
+                  "settings": {
+                    "custom_liquid": "<div class=\"review-card\">\n\n  <div class=\"avatar avatar-blue\">E</div>\n\n  <div class=\"review-name\">EMMANUEL DUVAL</div>\n\n  <div class=\"review-time\">2 mese atrás</div>\n\n  <div class=\"review-stars\">★★★★☆</div>\n\n  <div class=\"review-title\">\n    Splendide fabuleux\n  </div>\n\n  <div class=\"review-text\">\n    C'est mon premier coffret de chez artesania latina, est bien je peux vous dire que bravo. Effectivement j'étais impressionné par la qualité.\n  </div>\n\n  <div class=\"review-product\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-image_large.png\" alt=\"product\">\n    <span>Fragata Hermione La Fayette 1:89. Maqueta de Barco en Madera</span>\n  </div>\n\n</div>\n\n\n<style>\n\n.review-card{\n  max-width:420px;\n  margin:auto;\n  border:1px solid #e6e6e6;\n  border-radius:10px;\n  padding:35px 25px;\n  text-align:center;\n  font-family:Arial, sans-serif;\n  background:white;\n}\n\n.avatar{\n  width:70px;\n  height:70px;\n  color:white;\n  font-size:30px;\n  font-weight:bold;\n  border-radius:50%;\n  display:flex;\n  align-items:center;\n  justify-content:center;\n  margin:-55px auto 15px auto;\n}\n\n.avatar-blue{\n  background:#5f7f9f;\n}\n\n.review-name{\n  font-weight:700;\n  font-size:20px;\n  margin-bottom:10px;\n}\n\n.review-time{\n  color:#888;\n  font-size:14px;\n  margin-bottom:10px;\n}\n\n.review-stars{\n  color:#f59e0b;\n  font-size:22px;\n  margin:8px 0;\n}\n\n.review-title{\n  font-size:22px;\n  font-weight:700;\n  margin:10px 0;\n  color:#444;\n}\n\n.review-text{\n  color:#4054b2;\n  font-size:17px;\n  line-height:1.5;\n  margin-bottom:20px;\n}\n\n.review-product{\n  display:flex;\n  align-items:center;\n  justify-content:center;\n  gap:10px;\n}\n\n.review-product img{\n  width:55px;\n  border-radius:4px;\n}\n\n.review-product span{\n  color:#1ea7c6;\n  font-size:15px;\n}\n\n</style>"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "custom_liquid_amhmyF"
+              ]
+            },
             "card_P3J9YP": {
               "type": "_card",
               "name": "t:names.card",
@@ -2860,6 +2901,7 @@
             "card_REbJtq",
             "card_dmmmbk",
             "card_aqXUNG",
+            "card_PPMkzp",
             "card_P3J9YP"
           ]
         }
