@@ -2627,7 +2627,7 @@
               "type": "_card",
               "name": "t:names.card",
               "settings": {
-                "content_direction": "column",
+                "content_direction": "row",
                 "vertical_on_mobile": true,
                 "horizontal_alignment": "flex-start",
                 "vertical_alignment": "center",
@@ -2651,6 +2651,14 @@
                 "padding-inline-end": 0
               },
               "blocks": {
+                "custom_liquid_XAHNgF": {
+                  "type": "custom-liquid",
+                  "name": "t:names.custom_liquid",
+                  "settings": {
+                    "custom_liquid": "<div class=\"review-card\">\n\n  <div class=\"avatar\">D</div>\n\n  <div class=\"review-name\">DIDIER GUILLONNEAU</div>\n\n  <div class=\"review-verified\">Verified purchase</div>\n  <div class=\"review-time\">2 mese atrás</div>\n\n  <div class=\"review-stars\">★★★★★</div>\n\n  <div class=\"review-title\">\n    ma première commande\n  </div>\n\n  <div class=\"review-text\">\n    Je suis entièrement satisfait de ma commande. Très bien emballée, un catalogue très appréciable pour visualiser les détails.\n  </div>\n\n</div>\n\n\n<style>\n\n.review-card{\n  max-width:420px;\n  margin:auto;\n  border:1px solid #e6e6e6;\n  border-radius:10px;\n  padding:35px 25px;\n  text-align:center;\n  font-family: Arial, sans-serif;\n  background:white;\n}\n\n.avatar{\n  width:70px;\n  height:70px;\n  background:#5b6acb;\n  color:white;\n  font-size:30px;\n  font-weight:bold;\n  border-radius:50%;\n  display:flex;\n  align-items:center;\n  justify-content:center;\n  margin:-55px auto 15px auto;\n}\n\n.review-name{\n  font-weight:700;\n  font-size:18px;\n  margin-bottom:8px;\n}\n\n.review-verified{\n  color:#22c55e;\n  font-size:15px;\n}\n\n.review-time{\n  color:#888;\n  font-size:14px;\n  margin-bottom:10px;\n}\n\n.review-stars{\n  color:#f59e0b;\n  font-size:22px;\n  margin:8px 0;\n}\n\n.review-title{\n  font-size:22px;\n  font-weight:700;\n  margin:10px 0;\n  color:#444;\n}\n\n.review-text{\n  color:#4054b2;\n  font-size:17px;\n  line-height:1.5;\n}\n\n</style>"
+                  },
+                  "blocks": {}
+                },
                 "product_card_yJN9Ka": {
                   "type": "product-card",
                   "name": "t:names.product_card",
@@ -2718,19 +2726,11 @@
                     "product_card_gallery_FhQWhH",
                     "product_title_DBdRqa"
                   ]
-                },
-                "custom_liquid_XAHNgF": {
-                  "type": "custom-liquid",
-                  "name": "t:names.custom_liquid",
-                  "settings": {
-                    "custom_liquid": "<div class=\"review-card\">\n\n  <div class=\"avatar\">D</div>\n\n  <div class=\"review-name\">DIDIER GUILLONNEAU</div>\n\n  <div class=\"review-verified\">Verified purchase</div>\n  <div class=\"review-time\">2 mese atrás</div>\n\n  <div class=\"review-stars\">★★★★★</div>\n\n  <div class=\"review-title\">\n    ma première commande\n  </div>\n\n  <div class=\"review-text\">\n    Je suis entièrement satisfait de ma commande. Très bien emballée, un catalogue très appréciable pour visualiser les détails.\n  </div>\n\n</div>\n\n\n<style>\n\n.review-card{\n  max-width:420px;\n  margin:auto;\n  border:1px solid #e6e6e6;\n  border-radius:10px;\n  padding:35px 25px;\n  text-align:center;\n  font-family: Arial, sans-serif;\n  background:white;\n}\n\n.avatar{\n  width:70px;\n  height:70px;\n  background:#5b6acb;\n  color:white;\n  font-size:30px;\n  font-weight:bold;\n  border-radius:50%;\n  display:flex;\n  align-items:center;\n  justify-content:center;\n  margin:-55px auto 15px auto;\n}\n\n.review-name{\n  font-weight:700;\n  font-size:18px;\n  margin-bottom:8px;\n}\n\n.review-verified{\n  color:#22c55e;\n  font-size:15px;\n}\n\n.review-time{\n  color:#888;\n  font-size:14px;\n  margin-bottom:10px;\n}\n\n.review-stars{\n  color:#f59e0b;\n  font-size:22px;\n  margin:8px 0;\n}\n\n.review-title{\n  font-size:22px;\n  font-weight:700;\n  margin:10px 0;\n  color:#444;\n}\n\n.review-text{\n  color:#4054b2;\n  font-size:17px;\n  line-height:1.5;\n}\n\n</style>"
-                  },
-                  "blocks": {}
                 }
               },
               "block_order": [
-                "product_card_yJN9Ka",
-                "custom_liquid_XAHNgF"
+                "custom_liquid_XAHNgF",
+                "product_card_yJN9Ka"
               ]
             },
             "card_REbJtq": {
