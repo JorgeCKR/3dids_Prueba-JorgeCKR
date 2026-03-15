@@ -888,7 +888,7 @@
             "vertical_alignment_flex_direction_column": "space-between",
             "gap": 0,
             "width": "custom",
-            "custom_width": 50,
+            "custom_width": 53,
             "width_mobile": "fill",
             "custom_width_mobile": 100,
             "height": "custom",
@@ -919,7 +919,7 @@
               "type": "custom-liquid",
               "name": "t:names.custom_liquid",
               "settings": {
-                "custom_liquid": "<iframe width=\"668\" height=\"332\" src=\"https://www.youtube.com/embed/LiQRUHBoF-k?list=TLGG-xd8sCYGiZoxNTAzMjAyNg\" title=\"Artesanía Latina - El placer de construir desde 1970\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+                "custom_liquid": "<iframe width=\"718\" height=\"432\" src=\"https://www.youtube.com/embed/LiQRUHBoF-k?list=TLGG-xd8sCYGiZoxNTAzMjAyNg\" title=\"Artesanía Latina - El placer de construir desde 1970\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
               },
               "blocks": {}
             }
