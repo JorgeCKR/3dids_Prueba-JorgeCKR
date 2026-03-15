@@ -803,19 +803,6 @@
             "padding-inline-end": 100
           },
           "blocks": {
-            "spacer_RJEcDF": {
-              "type": "spacer",
-              "settings": {
-                "size": "pixel",
-                "percent_size": 100,
-                "pixel_size": 16,
-                "custom_mobile_size": false,
-                "size_mobile": "percent",
-                "percent_size_mobile": 100,
-                "pixel_size_mobile": 120
-              },
-              "blocks": {}
-            },
             "text_MGcxtG": {
               "type": "text",
               "settings": {
@@ -835,22 +822,9 @@
                 "background_color": "#273488",
                 "corner_radius": 0,
                 "padding-block-start": 0,
-                "padding-block-end": 49,
+                "padding-block-end": 64,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "spacer_Ng6Qgb": {
-              "type": "spacer",
-              "settings": {
-                "size": "pixel",
-                "percent_size": 100,
-                "pixel_size": 160,
-                "custom_mobile_size": false,
-                "size_mobile": "percent",
-                "percent_size_mobile": 100,
-                "pixel_size_mobile": 120
               },
               "blocks": {}
             },
@@ -870,9 +844,7 @@
             }
           },
           "block_order": [
-            "spacer_RJEcDF",
             "text_MGcxtG",
-            "spacer_Ng6Qgb",
             "button_WpEDFF"
           ]
         },
