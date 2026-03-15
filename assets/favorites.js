@@ -79,3 +79,19 @@ document.querySelectorAll(".favorite-button").forEach(button => {
   }
 
 });
+
+document.addEventListener("click", function(e){
+
+  if(!e.target.classList.contains("remove-favorite")) return;
+
+  const handle = e.target.dataset.handle;
+
+  let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+
+  favorites = favorites.filter(item => item !== handle);
+
+  localStorage.setItem("favorites", JSON.stringify(favorites));
+
+  e.target.closest(".favorite-item").remove();
+
+});
