@@ -5049,3 +5049,7 @@ product-recommendations:has([data-has-recommendations='false']) {
   width: 20px;
   height: 20px;
 }
+
+.favorite-button.is-favorite svg {
+  fill: red;
+}
