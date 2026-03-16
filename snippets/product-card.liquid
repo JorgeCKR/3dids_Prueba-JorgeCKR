@@ -106,6 +106,21 @@
       {% if block_settings.padding-block-end > 0 %}--zoom-out-padding-block-end: min(var(--padding-xs), {{ block_settings.padding-block-end | times: 0.7}}px);{% endif %}
     "
   >
+
+  {%- assign skill_level = product.metafields.shopify.skill-level.value -%}
+    {%- if skill_level != blank -%}
+      {%- case skill_level -%}
+        {%- when 'Iniciación' -%}{%- assign badge_color = '#27AE60' -%}
+        {%- when 'Iniciados' -%}{%- assign badge_color = '#F0A500' -%}
+        {%- when 'Experto' -%}{%- assign badge_color = '#E74C3C' -%}
+        {%- else -%}{%- assign badge_color = '#999999' -%}
+      {%- endcase -%}
+      <div class="product-card__skill-badge" style="--badge-color: {{ badge_color }};">
+        <span class="product-card__skill-dot"></span>
+        {{ skill_level }}
+      </div>
+    {%- endif -%}
+
     <button
       class="favorite-button"
       data-product-handle="{{ product.handle }}"
@@ -117,10 +132,6 @@
     </button>
 
     {{ children }}
-
-    {% for attribute in product.category.attributes %}
-      <p>{{ attribute.name }} : {{ attribute.value }}</p>
-    {% endfor %}
 
   </div>
 </product-card>
