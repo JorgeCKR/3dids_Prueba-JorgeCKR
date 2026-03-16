@@ -117,7 +117,16 @@
     </button>
 
     {{ children }}
-    <pre>{{ product.metafields | json }}</pre>
+
+      {% for namespace in product.metafields %}
+        {% for metafield in namespace %}
+          <p>
+            {{ namespace[0] }}.{{ metafield[0] }} :
+            {{ metafield[1].value }}
+          </p>
+        {% endfor %}
+      {% endfor %}
+      
   </div>
 </product-card>
 
