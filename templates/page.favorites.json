@@ -9,12 +9,42 @@
  */
 {
   "sections": {
+    "divider_wAcLyP": {
+      "type": "divider",
+      "name": "t:names.divider_section",
+      "settings": {
+        "color_scheme": "scheme-3d166c23-f1e0-4942-a1f4-898055fd3ecd",
+        "section_width": "full-width",
+        "thickness": 1,
+        "corner_radius": "square",
+        "width_percent": 100,
+        "alignment_horizontal": "center",
+        "padding-block-start": 49,
+        "padding-block-end": 16
+      }
+    },
+    "divider_U83y7g": {
+      "type": "divider",
+      "name": "t:names.divider_section",
+      "settings": {
+        "color_scheme": "scheme-3d166c23-f1e0-4942-a1f4-898055fd3ecd",
+        "section_width": "full-width",
+        "thickness": 1,
+        "corner_radius": "square",
+        "width_percent": 100,
+        "alignment_horizontal": "center",
+        "padding-block-start": 49,
+        "padding-block-end": 16
+      }
+    },
     "main": {
       "type": "favorites-page",
       "settings": {}
     }
   },
   "order": [
-    "main"
+    "divider_wAcLyP",
+    "main",
+    "divider_U83y7g"
   ]
 }
