@@ -5077,3 +5077,31 @@ product-recommendations:has([data-has-recommendations='false']) {
   gap:20px;
 }
 
+/* badge de Nivel de Habilidad*/
+.product-card__skill-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #fff;
+  border: 1px solid var(--badge-color);
+  border-radius: 20px;
+  padding: 4px 10px 4px 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #1A1A1A;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.product-card__skill-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--badge-color);
+  flex-shrink: 0;
+}
+
+
