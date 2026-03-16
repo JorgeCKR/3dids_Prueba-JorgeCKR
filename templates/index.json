@@ -1190,7 +1190,7 @@
             "placeholder": "hero-apparel-2",
             "padding-block-start": 0,
             "padding-block-end": 0,
-            "padding-inline-start": 0,
+            "padding-inline-start": 40,
             "padding-inline-end": 0
           },
           "blocks": {
