@@ -5107,21 +5107,18 @@ product-recommendations:has([data-has-recommendations='false']) {
 /* Boton de Commpra en Product-card tipo Hover*/
 .product-card__hover-buy {
   position: absolute;
-  bottom: 12px;
-  left: 12px;
-  right: 12px;
-  display: flex;
-  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   opacity: 0;
-  transform: translateY(8px);
-  transition: opacity 0.2s ease, transform 0.2s ease;
+  transition: opacity 0.2s ease;
   pointer-events: none;
   z-index: 3;
+  width: 80%;
 }
 
 .product-card__content:hover .product-card__hover-buy {
   opacity: 1;
-  transform: translateY(0);
   pointer-events: auto;
 }
 
@@ -5129,4 +5126,5 @@ product-recommendations:has([data-has-recommendations='false']) {
   width: 100%;
   text-align: center;
   text-decoration: none;
+  display: block;
 }
