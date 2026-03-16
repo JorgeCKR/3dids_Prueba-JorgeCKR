@@ -5115,7 +5115,7 @@ product-recommendations:has([data-has-recommendations='false']) {
   transform: translateY(4px);
   pointer-events: none;
   z-index: 3;
-  width: auto;
+  width: 20px;
 }
 
 .product-card__content:hover .product-card__hover-buy {
