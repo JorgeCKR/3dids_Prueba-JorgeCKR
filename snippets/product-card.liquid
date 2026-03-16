@@ -109,8 +109,7 @@
 
   {%- assign skill = product.metafields['shopify']['skill-level'].value -%}
     {%- if skill != blank -%}
-      {%- assign skill_entry = skill.first -%}
-      {%- assign skill_label = skill_entry['label'] -%}
+      {%- assign skill_label = skill | map: 'label' | first -%}
       DEBUG: "{{ skill | map: 'label' | first }}"
       {%- case skill_label -%}
         {%- when 'Iniciación' -%}{%- assign badge_color = '#27AE60' -%}
