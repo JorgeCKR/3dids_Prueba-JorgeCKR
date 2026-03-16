@@ -58,11 +58,26 @@
             "custom_width_mobile": 100
           },
           "blocks": {}
+        },
+        "spacer_AFPaAd": {
+          "type": "spacer",
+          "name": "t:names.spacer",
+          "settings": {
+            "size": "pixel",
+            "percent_size": 0,
+            "pixel_size": 40,
+            "custom_mobile_size": false,
+            "size_mobile": "percent",
+            "percent_size_mobile": 100,
+            "pixel_size_mobile": 120
+          },
+          "blocks": {}
         }
       },
       "block_order": [
         "ai_gen_block_86d8dab_XCyezy",
-        "button_H9gpTf"
+        "button_H9gpTf",
+        "spacer_AFPaAd"
       ],
       "custom_css": [
         ".hero,.banner,.banner__media {min-height: 800px;}"
