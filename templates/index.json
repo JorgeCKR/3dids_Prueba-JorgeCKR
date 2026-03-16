@@ -77,14 +77,14 @@
         "open_in_new_tab": false,
         "content_direction": "column",
         "vertical_on_mobile": true,
-        "horizontal_alignment": "space-between",
+        "horizontal_alignment": "center",
         "vertical_alignment": "flex-end",
-        "align_baseline": true,
+        "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "flex-end",
-        "gap": 24,
+        "gap": 0,
         "section_width": "full-width",
-        "section_height": "custom",
+        "section_height": "full-screen",
         "section_height_custom": 100,
         "color_scheme": "scheme-6",
         "toggle_overlay": true,
@@ -93,8 +93,8 @@
         "gradient_direction": "to bottom",
         "blurred_reflection": false,
         "reflection_opacity": 75,
-        "padding-block-start": 100,
-        "padding-block-end": 72
+        "padding-block-start": 0,
+        "padding-block-end": 0
       }
     },
     "177325513440194141": {
