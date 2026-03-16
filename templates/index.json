@@ -1188,7 +1188,7 @@
             "link": "",
             "open_in_new_tab": false,
             "placeholder": "hero-apparel-2",
-            "padding-block-start": 40,
+            "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
             "padding-inline-end": 0
@@ -1312,7 +1312,7 @@
             "link": "",
             "open_in_new_tab": false,
             "placeholder": "hero-apparel-2",
-            "padding-block-start": 40,
+            "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
             "padding-inline-end": 0
