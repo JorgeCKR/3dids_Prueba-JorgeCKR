@@ -5107,12 +5107,11 @@ product-recommendations:has([data-has-recommendations='false']) {
 /* Boton de Commpra en Product-card tipo Hover*/
 .product-card__hover-buy {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  bottom: 12px;
+  left: 12px;
+  right: 12px;
   display: flex;
   justify-content: center;
-  padding: 12px;
   opacity: 0;
   transform: translateY(8px);
   transition: opacity 0.2s ease, transform 0.2s ease;
@@ -5130,8 +5129,4 @@ product-recommendations:has([data-has-recommendations='false']) {
   width: 100%;
   text-align: center;
   text-decoration: none;
-}
-
-.quick-add {
-  display: none !important;
 }
