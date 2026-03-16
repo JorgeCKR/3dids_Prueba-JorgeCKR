@@ -65,7 +65,7 @@
         "button_H9gpTf"
       ],
       "custom_css": [
-        ".hero,.banner,.banner__media {min-height: 700px;}"
+        ".hero,.banner,.banner__media {min-height: 900px;}"
       ],
       "name": "t:names.hero",
       "settings": {
