@@ -5107,7 +5107,7 @@ product-recommendations:has([data-has-recommendations='false']) {
 /* Boton de Commpra en Product-card tipo Hover*/
 .product-card__hover-buy {
   position: absolute;
-  bottom: 26px;
+  bottom: 36px;
   left: 12px;
   right: 12px;
   opacity: 0;
