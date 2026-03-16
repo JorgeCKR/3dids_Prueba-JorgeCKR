@@ -109,6 +109,7 @@
 
   {%- assign skill = product.metafields['shopify']['skill-level'].value -%}
     {%- if skill != blank -%}
+      {{ skill | json }}{{ skill | json }}
       {%- assign skill_label = skill.display_name -%}
       {%- case skill_label -%}
         {%- when 'Iniciación' -%}{%- assign badge_color = '#27AE60' -%}
