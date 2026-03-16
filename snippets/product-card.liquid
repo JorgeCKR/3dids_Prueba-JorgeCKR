@@ -111,7 +111,7 @@
     {%- if skill != blank -%}
       {%- assign skill_entry = skill.first -%}
       {%- assign skill_label = skill_entry['label'] -%}
-      DEBUG: "{{ skill_label }}"
+      DEBUG: "{{ skill_entry }}"
       {%- case skill_label -%}
         {%- when 'Iniciación' -%}{%- assign badge_color = '#27AE60' -%}
         {%- when 'Iniciados' -%}{%- assign badge_color = '#F0A500' -%}
