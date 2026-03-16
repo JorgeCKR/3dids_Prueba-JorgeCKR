@@ -1251,7 +1251,7 @@
                 "open_in_new_tab": false,
                 "style_class": "button",
                 "width": "custom",
-                "custom_width": 69,
+                "custom_width": 60,
                 "width_mobile": "fit-content",
                 "custom_width_mobile": 100
               },
@@ -1375,7 +1375,7 @@
                 "open_in_new_tab": false,
                 "style_class": "button",
                 "width": "custom",
-                "custom_width": 69,
+                "custom_width": 60,
                 "width_mobile": "fit-content",
                 "custom_width_mobile": 100
               },
@@ -1499,7 +1499,7 @@
                 "open_in_new_tab": false,
                 "style_class": "button",
                 "width": "custom",
-                "custom_width": 69,
+                "custom_width": 60,
                 "width_mobile": "fit-content",
                 "custom_width_mobile": 100
               },
@@ -1675,7 +1675,7 @@
                 "open_in_new_tab": false,
                 "style_class": "button",
                 "width": "custom",
-                "custom_width": 69,
+                "custom_width": 60,
                 "width_mobile": "fit-content",
                 "custom_width_mobile": 100
               },
@@ -1799,7 +1799,7 @@
                 "open_in_new_tab": false,
                 "style_class": "button",
                 "width": "custom",
-                "custom_width": 69,
+                "custom_width": 60,
                 "width_mobile": "fit-content",
                 "custom_width_mobile": 100
               },
@@ -1923,7 +1923,7 @@
                 "open_in_new_tab": false,
                 "style_class": "button",
                 "width": "custom",
-                "custom_width": 69,
+                "custom_width": 60,
                 "width_mobile": "fit-content",
                 "custom_width_mobile": 100
               },
