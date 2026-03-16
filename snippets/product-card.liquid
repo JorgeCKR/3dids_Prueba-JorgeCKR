@@ -118,15 +118,8 @@
 
     {{ children }}
 
-      {% for namespace in product.metafields %}
-        {% for metafield in namespace %}
-          <p>
-            {{ namespace[0] }}.{{ metafield[0] }} :
-            {{ metafield[1].value }}
-          </p>
-        {% endfor %}
-      {% endfor %}
-      
+    {{ product.metafields.shopify.nivel_de_habilidad }}
+
   </div>
 </product-card>
 
