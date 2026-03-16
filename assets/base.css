@@ -5105,17 +5105,14 @@ product-recommendations:has([data-has-recommendations='false']) {
 }
 
 /* Boton de Commpra en Product-card tipo Hover*/
-.product-card__media-wrapper {
-  position: relative;
-}
-
 .product-card__hover-buy {
   position: absolute;
-  bottom: 12px;
-  left: 12px;
-  right: 12px;
+  bottom: 0;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: center;
+  padding: 12px;
   opacity: 0;
   transform: translateY(8px);
   transition: opacity 0.2s ease, transform 0.2s ease;
@@ -5123,7 +5120,7 @@ product-recommendations:has([data-has-recommendations='false']) {
   z-index: 3;
 }
 
-.product-card__media-wrapper:hover .product-card__hover-buy {
+.product-card__content:hover .product-card__hover-buy {
   opacity: 1;
   transform: translateY(0);
   pointer-events: auto;
