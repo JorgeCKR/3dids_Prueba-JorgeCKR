@@ -118,7 +118,9 @@
 
     {{ children }}
 
-    {{ product.metafields.shopify.nivel_de_habilidad }}
+    {% for attribute in product.category.attributes %}
+      <p>{{ attribute.name }} : {{ attribute.value }}</p>
+    {% endfor %}
 
   </div>
 </product-card>
