@@ -107,9 +107,10 @@
     "
   >
 
-  {%- assign skill_level = product.metafields.shopify.skill-level.value -%}
-    {%- if skill_level != blank -%}
-      {%- case skill_level -%}
+  {%- assign skill = product.metafields['shopify']['skill-level'].value -%}
+    {%- if skill != blank -%}
+      {%- assign skill_label = skill.label -%}
+      {%- case skill_label -%}
         {%- when 'Iniciación' -%}{%- assign badge_color = '#27AE60' -%}
         {%- when 'Iniciados' -%}{%- assign badge_color = '#F0A500' -%}
         {%- when 'Experto' -%}{%- assign badge_color = '#E74C3C' -%}
@@ -117,7 +118,7 @@
       {%- endcase -%}
       <div class="product-card__skill-badge" style="--badge-color: {{ badge_color }};">
         <span class="product-card__skill-dot"></span>
-        {{ skill_level }}
+        {{ skill_label }}
       </div>
     {%- endif -%}
 
