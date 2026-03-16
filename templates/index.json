@@ -1221,7 +1221,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h2><strong>¿Quieres vender nuestros productos?</strong></h2>",
+                "text": "<h5><strong>¿Quieres vender nuestros productos?</strong></h5>",
                 "width": "100%",
                 "max_width": "none",
                 "alignment": "left",
@@ -1345,7 +1345,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h2><strong>Realizamos envíos rápidos y seguros a todo el mundo</strong></h2>",
+                "text": "<h5><strong>Realizamos envíos rápidos y seguros a todo el mundo</strong></h5>",
                 "width": "100%",
                 "max_width": "none",
                 "alignment": "left",
@@ -1469,7 +1469,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h2><strong>La comunidad para los amantes del modelismo</strong></h2>",
+                "text": "<h5><strong>La comunidad para los amantes del modelismo</strong></h5>",
                 "width": "100%",
                 "max_width": "none",
                 "alignment": "left",
