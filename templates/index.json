@@ -1256,12 +1256,27 @@
                 "custom_width_mobile": 100
               },
               "blocks": {}
+            },
+            "spacer_g9VmEF": {
+              "type": "spacer",
+              "name": "t:names.spacer",
+              "settings": {
+                "size": "percent",
+                "percent_size": 20,
+                "pixel_size": 120,
+                "custom_mobile_size": false,
+                "size_mobile": "percent",
+                "percent_size_mobile": 100,
+                "pixel_size_mobile": 120
+              },
+              "blocks": {}
             }
           },
           "block_order": [
             "image_UTJhzw",
             "text_Mk4hhp",
-            "button_NDtabK"
+            "button_NDtabK",
+            "spacer_g9VmEF"
           ]
         },
         "group_eP7Caa": {
@@ -1365,12 +1380,27 @@
                 "custom_width_mobile": 100
               },
               "blocks": {}
+            },
+            "spacer_cjpcnh": {
+              "type": "spacer",
+              "name": "t:names.spacer",
+              "settings": {
+                "size": "percent",
+                "percent_size": 20,
+                "pixel_size": 120,
+                "custom_mobile_size": false,
+                "size_mobile": "percent",
+                "percent_size_mobile": 100,
+                "pixel_size_mobile": 120
+              },
+              "blocks": {}
             }
           },
           "block_order": [
             "image_VbN6ML",
             "text_VddxVD",
-            "button_4ymm3c"
+            "button_4ymm3c",
+            "spacer_cjpcnh"
           ]
         },
         "group_3Rq8CW": {
@@ -1474,12 +1504,27 @@
                 "custom_width_mobile": 100
               },
               "blocks": {}
+            },
+            "spacer_jPG7X9": {
+              "type": "spacer",
+              "name": "t:names.spacer",
+              "settings": {
+                "size": "percent",
+                "percent_size": 20,
+                "pixel_size": 120,
+                "custom_mobile_size": false,
+                "size_mobile": "percent",
+                "percent_size_mobile": 100,
+                "pixel_size_mobile": 120
+              },
+              "blocks": {}
             }
           },
           "block_order": [
             "image_LJKpBR",
             "text_mYbXYQ",
-            "button_QUY8TG"
+            "button_QUY8TG",
+            "spacer_jPG7X9"
           ]
         }
       },
@@ -1635,12 +1680,27 @@
                 "custom_width_mobile": 100
               },
               "blocks": {}
+            },
+            "spacer_LCAXBt": {
+              "type": "spacer",
+              "name": "t:names.spacer",
+              "settings": {
+                "size": "percent",
+                "percent_size": 20,
+                "pixel_size": 120,
+                "custom_mobile_size": false,
+                "size_mobile": "percent",
+                "percent_size_mobile": 100,
+                "pixel_size_mobile": 120
+              },
+              "blocks": {}
             }
           },
           "block_order": [
             "image_UCMFGB",
             "text_b3gj8E",
-            "button_FQWhJt"
+            "button_FQWhJt",
+            "spacer_LCAXBt"
           ]
         },
         "group_RHMDDa": {
@@ -1744,12 +1804,27 @@
                 "custom_width_mobile": 100
               },
               "blocks": {}
+            },
+            "spacer_AAK8Nd": {
+              "type": "spacer",
+              "name": "t:names.spacer",
+              "settings": {
+                "size": "percent",
+                "percent_size": 20,
+                "pixel_size": 120,
+                "custom_mobile_size": false,
+                "size_mobile": "percent",
+                "percent_size_mobile": 100,
+                "pixel_size_mobile": 120
+              },
+              "blocks": {}
             }
           },
           "block_order": [
             "image_KPbXMQ",
             "text_Ndgqem",
-            "button_fk9bWU"
+            "button_fk9bWU",
+            "spacer_AAK8Nd"
           ]
         },
         "group_3Qk8hH": {
@@ -1853,12 +1928,27 @@
                 "custom_width_mobile": 100
               },
               "blocks": {}
+            },
+            "spacer_QMrgaD": {
+              "type": "spacer",
+              "name": "t:names.spacer",
+              "settings": {
+                "size": "percent",
+                "percent_size": 20,
+                "pixel_size": 120,
+                "custom_mobile_size": false,
+                "size_mobile": "percent",
+                "percent_size_mobile": 100,
+                "pixel_size_mobile": 120
+              },
+              "blocks": {}
             }
           },
           "block_order": [
             "image_AkeNA4",
             "text_CNkciz",
-            "button_MGUD9e"
+            "button_MGUD9e",
+            "spacer_QMrgaD"
           ]
         }
       },
