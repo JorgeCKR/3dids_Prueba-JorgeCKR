@@ -132,15 +132,7 @@
       </span>
     </button>
 
-    <div class="product-card__hover-buy">
-      
-      <a href="/cart/add?id={{ variant_to_link.id }}&quantity=1&return_to=/cart"
-        class="product-card__buy-btn button"
-        aria-label="Comprar {{ product.title }}"
-      >
-        Comprar
-      </a>
-    </div>
+    
     {{ children }}
     <div class="product-card__hover-buy">
       <a href="/cart/add?id={{ variant_to_link.id }}&quantity=1&return_to=/cart" class="product-card__buy-btn button">Comprar</a>
