@@ -123,10 +123,27 @@
         "enable_transparent_header_collection": false,
         "collection_color_scheme": "default"
       }
+    },
+    "custom_liquid_C4pWXV": {
+      "type": "custom-liquid",
+      "custom_css": [
+        ".search-bar {position: relative; width: 100%; max-width: 600px; margin: 0 auto;}",
+        ".search-bar input {width: 100%; padding: 16px 20px 16px 45px; border-radius: 40px; border: none; background: #e9edf5; font-size: 16px; outline: none;}",
+        ".search-icon {position: absolute; left: 18px; top: 50%; transform: translateY(-50%); color: #6c7aa0; font-size: 18px;}"
+      ],
+      "name": "t:names.custom_liquid",
+      "settings": {
+        "custom_liquid": "<form action=\"{{ routes.search_url }}\" method=\"get\" class=\"search-bar\">\n  \n  <span class=\"search-icon\">\n    🔍\n  </span>\n\n  <input\n    type=\"search\"\n    name=\"q\"\n    placeholder=\"¿Qué estás buscando?\"\n    value=\"{{ search.terms }}\"\n  >\n\n</form>",
+        "color_scheme": "scheme-58084d4c-a86e-4d0a-855e-a0966e5043f7",
+        "section_width": "page-width",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
     }
   },
   "order": [
     "header_announcements_9jGBFp",
-    "header_section"
+    "header_section",
+    "custom_liquid_C4pWXV"
   ]
 }
