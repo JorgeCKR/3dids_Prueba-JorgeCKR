@@ -223,15 +223,6 @@
             add_to_cart_text: add_to_cart_text
           %}
 
-          <button
-            type="button"
-            class="favorite-button-product"
-            data-handle="{{ product.handle }}"
-            style="margin-top:10px;"
-          >
-            {{ 'icon-heart.svg' | inline_asset_content }}
-          </button>
-
           {% content_for 'block',
             type: 'accelerated-checkout',
             id: 'accelerated-checkout',
