@@ -5134,18 +5134,4 @@ product-recommendations:has([data-has-recommendations='false']) {
 .quick-add {
   display: none !important;
 }
-/* Favoritos derecha boton add to card en tamplate product */
-.favorite-button-product {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  background: transparent;
-  border: none;
-  padding: 8px;
-  transition: transform 0.2s ease;
-}
 
-.favorite-button-product:hover {
-  transform: scale(1.15);
-}
