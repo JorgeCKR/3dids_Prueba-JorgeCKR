@@ -5175,3 +5175,8 @@ product-recommendations:has([data-has-recommendations='false']) {
   font-size: 16px;
   margin-top: 5px;
 }
+
+/* Carrusel muestra solo columnas indicadas */
+.carousel-content slideshow-slides {
+  --peek-next-slide-size: 0px;
+}
