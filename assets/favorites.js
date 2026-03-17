@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-  const buttons = document.querySelectorAll(".favorite-button, .favorite-button-product");
+  const buttons = document.querySelectorAll(".favorite-button");
 
   buttons.forEach(button => {
 
@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 const favoritesSaved = JSON.parse(localStorage.getItem("favorites")) || [];
 
-document.querySelectorAll(".favorite-button, .favorite-button-product").forEach(button => {
+document.querySelectorAll(".favorite-button").forEach(button => {
 
   const handle = button.dataset.productHandle;
 
