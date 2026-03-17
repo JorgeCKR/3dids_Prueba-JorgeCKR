@@ -2093,11 +2093,20 @@
             "custom_url": ""
           },
           "blocks": {}
+        },
+        "custom_liquid_6bz3t8": {
+          "type": "custom-liquid",
+          "name": "t:names.custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"custom-rating\">\n  <h2 class=\"rating-title\">Opiniones de los usuarios</h2>\n\n  {% assign rating = 4.7 %}\n  {% assign reviews = 70 %}\n  {% assign full_stars = rating | floor %}\n  {% assign has_half_star = false %}\n\n  {% if rating > full_stars %}\n    {% assign has_half_star = true %}\n  {% endif %}\n\n  <div class=\"stars\">\n    {% for i in (1..5) %}\n      {% if i <= full_stars %}\n        <span class=\"star full\">★</span>\n\n      {% elsif has_half_star %}\n        <span class=\"star half\">★</span>\n        {% assign has_half_star = false %}\n\n      {% else %}\n        <span class=\"star empty\">★</span>\n      {% endif %}\n    {% endfor %}\n  </div>\n\n  <p class=\"rating-text\">\n    {{ rating }} calificación de {{ reviews }} reseñas\n  </p>\n</div>"
+          },
+          "blocks": {}
         }
       },
       "block_order": [
         "text_rHh9qT",
-        "social_links_eqVFbU"
+        "social_links_eqVFbU",
+        "custom_liquid_6bz3t8"
       ],
       "name": "t:names.hero",
       "settings": {
