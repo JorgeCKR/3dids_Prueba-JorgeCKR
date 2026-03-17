@@ -5176,7 +5176,7 @@ product-recommendations:has([data-has-recommendations='false']) {
   margin-top: 5px;
 }
 
-/* Carrusel muestra solo columnas indicadas */
+/* Carrusel muestra solo columnas indicadas 
 .resource-list__carousel slideshow-slides {
   --peek-next-slide-size: 0px;
 }
@@ -5185,4 +5185,4 @@ product-recommendations:has([data-has-recommendations='false']) {
   max-width: calc(
     (100% - (var(--resource-list-column-gap-desktop, 10px) * 3)) / 4
   ) !important;
-}
+}*/
