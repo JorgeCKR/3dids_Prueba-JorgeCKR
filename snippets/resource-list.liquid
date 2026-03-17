@@ -55,7 +55,7 @@
   assign rows_gap = settings.rows_gap | default: 16
   assign bento_gap = settings.bento_gap | default: 16
   assign mobile_card_size = settings.mobile_card_size | default: '60cqw'
-  assign slide_width_max = 'calc((100cqw - (' | append: columns | append: ' - 1) * ' | append: columns_gap | append: 'px) / ' | append: columns | append: ')'
+  assign slide_width_max = '450px'
 
   case layout_type
     when 'grid'
