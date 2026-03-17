@@ -956,7 +956,7 @@
               "type": "custom-liquid",
               "name": "t:names.custom_liquid",
               "settings": {
-                "custom_liquid": "<iframe width=\"768\" height=\"432\" src=\"https://www.youtube.com/embed/LiQRUHBoF-k?list=TLGG-xd8sCYGiZoxNTAzMjAyNg\" title=\"Artesanía Latina - El placer de construir desde 1970\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+                "custom_liquid": "<iframe width=\"768\" height=\"432\" src=\"https://www.youtube.com/embed/LiQRUHBoF-k?list=TLGG-xd8sCYGiZoxNzAzMjAyNg\" title=\"Artesanía Latina - El placer de construir desde 1970\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
               },
               "blocks": {}
             }
@@ -1045,7 +1045,7 @@
               "type": "custom-liquid",
               "name": "t:names.custom_liquid",
               "settings": {
-                "custom_liquid": "<iframe width=\"688\" height=\"352\" src=\"https://www.youtube.com/embed/Lu-GImpTE8k?list=TLGGAppObONA9dIxNTAzMjAyNg\" title=\"Artesania Latina NEW! SOLEIL ROYAL 1/72 scale model\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+                "custom_liquid": "<iframe width=\"768\" height=\"432\" src=\"https://www.youtube.com/embed/Lu-GImpTE8k?list=TLGGAppObONA9dIxNzAzMjAyNg\" title=\"Artesania Latina NEW! SOLEIL ROYAL 1/72 scale model\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
               },
               "blocks": {}
             }
