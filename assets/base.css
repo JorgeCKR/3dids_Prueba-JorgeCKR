@@ -5177,6 +5177,12 @@ product-recommendations:has([data-has-recommendations='false']) {
 }
 
 /* Carrusel muestra solo columnas indicadas */
-.carousel-content slideshow-slides {
+.resource-list__carousel slideshow-slides {
   --peek-next-slide-size: 0px;
+}
+
+.resource-list__slide {
+  max-width: calc(
+    (100% - (var(--resource-list-column-gap-desktop, 10px) * 3)) / 4
+  ) !important;
 }
