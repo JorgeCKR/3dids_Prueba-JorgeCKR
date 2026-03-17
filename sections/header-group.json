@@ -134,7 +134,7 @@
       ],
       "name": "t:names.custom_liquid",
       "settings": {
-        "custom_liquid": "<form action=\"{{ routes.search_url }}\" method=\"get\" class=\"search-bar\">\n  \n  <span class=\"search-icon\">\n    🔍\n  </span>\n\n  <input\n    type=\"search\"\n    name=\"q\"\n    placeholder=\"¿Qué estás buscando?\"\n    value=\"{{ search.terms }}\"\n  >\n\n</form>",
+        "custom_liquid": "<style>\n/* Estilos para iconos de redes sociales cuadrados con colores */\n.social-links__item a {\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  width: 50px;\n  height: 50px;\n  border-radius: 8px;\n  padding: 12px;\n  transition: transform 0.2s ease;\n}\n\n.social-links__item a:hover {\n  transform: scale(1.1);\n}\n\n/* Color de fondo para Facebook */\n.social-links__item a[href*=\"facebook.com\"] {\n  background-color: #3b5998;\n}\n\n/* Color de fondo para Instagram */\n.social-links__item a[href*=\"instagram.com\"] {\n  background-color: #000000;\n}\n\n/* Color de fondo para YouTube */\n.social-links__item a[href*=\"youtube.com\"] {\n  background-color: #FF0000;\n}\n\n/* Iconos en blanco */\n.social-links__item svg {\n  fill: white !important;\n  color: white !important;\n}\n</style>",
         "color_scheme": "scheme-58084d4c-a86e-4d0a-855e-a0966e5043f7",
         "section_width": "page-width",
         "padding-block-start": 0,
