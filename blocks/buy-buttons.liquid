@@ -229,7 +229,7 @@
             data-handle="{{ product.handle }}"
             style="margin-top:10px;"
           >
-            {% render 'icon-heart' %}
+            {{ 'icon-heart.svg' | inline_asset_content }}
           </button>
 
           {% content_for 'block',
