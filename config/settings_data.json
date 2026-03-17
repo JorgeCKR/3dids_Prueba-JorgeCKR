@@ -67,7 +67,7 @@
     "show_cart_note": false,
     "show_add_discount_code": true,
     "drawer_drop_shadow": true,
-    "icon_stroke": "default",
+    "icon_stroke": "thin",
     "input_border_width": 1,
     "inputs_border_radius": 4,
     "popover_color_scheme": "scheme-9ff883f5-3d55-48da-9f8c-c9f93b273946",
