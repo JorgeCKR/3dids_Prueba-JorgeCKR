@@ -42,7 +42,7 @@
           "type": "text",
           "name": "Title",
           "settings": {
-            "text": "<h1><strong>Maquetas de barcos</strong></h1>",
+            "text": "<h1><strong>Aviones</strong></h1>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
