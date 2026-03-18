@@ -143,7 +143,7 @@
                 "color_scheme": "",
                 "heading": "Suscríbete a nuestra newsletter y disfruta de un 5% de descuento en tu primera compra",
                 "heading_preset": "h4",
-                "border_style": "underline",
+                "border_style": "all",
                 "border_width": 0.5,
                 "border_radius": 100,
                 "input_type_preset": "paragraph",
